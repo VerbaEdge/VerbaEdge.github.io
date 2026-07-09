@@ -1,140 +1,346 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>VerbaEdge Systems LLC | Edge AI, Machine Learning, and Automation</title>
-  <meta name="description" content="VerbaEdge Systems LLC helps organizations design, prototype, and deploy AI, computer vision, embedded intelligence, operational analytics, and workflow automation." />
-  <link rel="icon" href="assets/verbaedge-logo.svg" />
-  <style>
-    :root { --bg:#0b1020; --bg2:#111827; --card:#ffffff; --ink:#111827; --muted:#475569; --line:#e5e7eb; --accent:#2563eb; --accent2:#059669; --white:#fff; --soft:#f8fafc; }
-    * { box-sizing:border-box; }
-    html { scroll-behavior:smooth; }
-    body { margin:0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color:var(--ink); background:#fff; line-height:1.6; }
-    a { color:inherit; }
-    .wrap { width:min(1120px, 92vw); margin:0 auto; }
-    header { position:sticky; top:0; z-index:20; background:rgba(255,255,255,.93); backdrop-filter:blur(12px); border-bottom:1px solid var(--line); }
-    nav { min-height:72px; display:flex; align-items:center; justify-content:space-between; gap:24px; }
-    .brand { display:flex; align-items:center; gap:12px; font-weight:850; letter-spacing:-.03em; text-decoration:none; }
-    .brand img { width:40px; height:40px; border-radius:11px; }
-    .links { display:flex; gap:22px; font-size:14px; font-weight:700; color:#334155; }
-    .links a { text-decoration:none; }
-    .hero { color:white; background: radial-gradient(circle at 18% 0%, rgba(37,99,235,.35), transparent 26%), radial-gradient(circle at 90% 12%, rgba(5,150,105,.23), transparent 26%), var(--bg); padding:88px 0 74px; }
-    .hero-grid { display:grid; grid-template-columns:1.25fr .75fr; gap:44px; align-items:center; }
-    .eyebrow { color:#a7f3d0; font-size:13px; font-weight:800; letter-spacing:.09em; text-transform:uppercase; }
-    h1 { font-size:clamp(42px, 6vw, 72px); line-height:.98; letter-spacing:-.065em; margin:16px 0 18px; }
-    .lead { font-size:20px; color:#dbeafe; max-width:760px; }
-    .cta { display:flex; flex-wrap:wrap; gap:14px; margin-top:28px; }
-    .btn { display:inline-flex; align-items:center; justify-content:center; border-radius:14px; padding:14px 18px; font-weight:850; text-decoration:none; }
-    .btn-primary { background:white; color:#0b1020; }
-    .btn-secondary { color:white; border:1px solid rgba(255,255,255,.26); }
-    .hero-card { background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.15); border-radius:28px; padding:28px; box-shadow:0 32px 90px rgba(0,0,0,.28); }
-    .hero-card h2 { color:white; font-size:21px; margin:0 0 10px; letter-spacing:-.02em; }
-    .fact { padding:16px 0; border-top:1px solid rgba(255,255,255,.13); color:#dbeafe; }
-    .fact strong { display:block; color:white; font-size:23px; line-height:1.2; }
-    section { padding:76px 0; }
-    h2 { font-size:38px; line-height:1.1; letter-spacing:-.045em; margin:0 0 12px; }
-    .section-lead { color:var(--muted); font-size:18px; max-width:760px; }
-    .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:34px; }
-    .card { background:#fff; border:1px solid var(--line); border-radius:24px; padding:24px; box-shadow:0 14px 38px rgba(15,23,42,.06); }
-    .card h3 { margin:0 0 10px; font-size:19px; letter-spacing:-.02em; }
-    .band { background:#111827; color:#fff; }
-    .band .section-lead { color:#cbd5e1; }
-    .pill-list { display:flex; flex-wrap:wrap; gap:10px; margin-top:24px; }
-    .pill { border:1px solid #334155; border-radius:999px; padding:9px 13px; background:rgba(255,255,255,.04); color:#e5e7eb; font-size:14px; font-weight:650; }
-    .two-col { display:grid; grid-template-columns:.9fr 1.1fr; gap:34px; align-items:start; }
-    .contact-card { background:#fff; border:1px solid var(--line); border-radius:24px; padding:26px; box-shadow:0 14px 38px rgba(15,23,42,.06); }
-    .contact-card p { margin:8px 0; }
-    .small { color:#64748b; font-size:14px; }
-    footer { border-top:1px solid var(--line); padding:28px 0; color:#64748b; font-size:14px; }
-    @media (max-width:880px) { .hero-grid,.two-col,.cards { grid-template-columns:1fr; } .links { display:none; } }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VerbaEdge Systems LLC | AI, Machine Learning, Computer Vision, Edge AI</title>
+  <meta name="description" content="VerbaEdge Systems LLC provides practical AI, machine learning, computer vision, edge AI, RAG chatbot, LLM evaluation, Python development, and automation services for businesses.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="VerbaEdge Systems LLC | Practical AI and Machine Learning Engineering">
+  <meta property="og:description" content="AI/ML engineering, computer vision, edge AI, embedded ML, RAG chatbots, LLM evaluation, Python development, and business workflow automation.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://verbaedge.com/">
+  <meta property="og:image" content="https://verbaedge.com/assets/portfolio/upwork-portfolio-image-classifier-edge-hardware.png">
+  <meta name="theme-color" content="#07111f">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "VerbaEdge Systems LLC",
+    "url": "https://verbaedge.com/",
+    "email": "contracts@verbaedge.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "AZ",
+      "addressCountry": "US"
+    },
+    "description": "VerbaEdge Systems LLC provides applied AI, machine learning, computer vision, edge AI, RAG chatbot, LLM evaluation, Python development, data science, embedded systems, and automation services.",
+    "sameAs": [
+      "https://www.upwork.com/agencies/2070672183064581036/"
+    ],
+    "knowsAbout": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Computer Vision",
+      "Deep Learning",
+      "Embedded Linux",
+      "Edge AI",
+      "RAG chatbots",
+      "LLM evaluation",
+      "Prompt engineering",
+      "Data Science",
+      "Python development",
+      "API integration",
+      "Time Series Analysis",
+      "Automation"
+    ]
+  }
+  </script>
 </head>
 <body>
-  <header>
-    <div class="wrap">
-      <nav>
-        <a class="brand" href="#top"><img src="assets/verbaedge-logo.svg" alt="VerbaEdge logo" /> VerbaEdge Systems LLC</a>
-        <div class="links"><a href="#services">Services</a><a href="#capabilities">Capabilities</a><a href="#industries">Industries</a><a href="#contact">Contact</a></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="VerbaEdge Systems LLC home">
+        <span class="brand-mark" aria-hidden="true">VE</span>
+        <span>VerbaEdge Systems LLC</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#upwork">Upwork</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#engagements">Engagements</a>
+        <a class="btn btn-small" href="mailto:contracts@verbaedge.com">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main id="top">
-    <section class="hero">
-      <div class="wrap hero-grid">
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Applied AI · Machine Learning · Edge Intelligence</p>
+          <h1>Practical AI engineering for companies that need working prototypes, clear scope, and reliable technical direction.</h1>
+          <p class="hero-lede">
+            VerbaEdge Systems LLC builds practical AI and machine learning solutions for businesses that need help moving from an idea, technical problem, or prototype to a scoped solution that can be tested, improved, and deployed.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://www.upwork.com/agencies/2070672183064581036/" target="_blank" rel="noopener noreferrer">View Upwork agency profile</a>
+            <a class="btn" href="mailto:contracts@verbaedge.com?subject=Project%20Inquiry%20for%20VerbaEdge%20Systems%20LLC">Email VerbaEdge</a>
+          </div>
+          <div class="trust-row" aria-label="Core focus areas">
+            <span class="pill">AI and machine learning</span>
+            <span class="pill">Computer vision</span>
+            <span class="pill">Edge AI</span>
+            <span class="pill">RAG chatbots</span>
+            <span class="pill">LLM evaluation</span>
+            <span class="pill">Python development</span>
+          </div>
+        </div>
+
+        <aside class="hero-panel" aria-label="Agency positioning">
+          <p class="eyebrow">Agency profile</p>
+          <h2>Technical work led by a Ph.D. Computer Engineer.</h2>
+          <p>
+            The agency profile focuses on applied AI, computer vision, edge AI, embedded machine learning, RAG chatbots, LLM evaluation, Python development, data science, API integration, and automation.
+          </p>
+          <div class="facts">
+            <div><strong>Founded</strong><span>2026</span></div>
+            <div><strong>Agency size</strong><span>2–10 workers</span></div>
+            <div><strong>Client focus</strong><span>Very small, small, and medium businesses</span></div>
+            <div><strong>Languages</strong><span>English and French</span></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section strip" id="upwork">
+      <div class="container upwork-grid">
         <div>
-          <div class="eyebrow">AI systems for real-world operations</div>
-          <h1>Edge AI, machine learning, and automation solutions.</h1>
-          <p class="lead">VerbaEdge Systems LLC helps organizations design, prototype, and deploy practical AI systems for computer vision, embedded intelligence, operational analytics, and workflow automation.</p>
-          <div class="cta"><a class="btn btn-primary" href="mailto:contracts@verbaedge.com?subject=Project%20Inquiry%20for%20VerbaEdge">Start a project</a><a class="btn btn-secondary" href="#capabilities">View capabilities</a></div>
+          <p class="eyebrow">Upwork agency profile</p>
+          <h2>Built around the services clients search for on Upwork.</h2>
+          <p>
+            VerbaEdge is positioned as an AI and machine learning agency for focused technical delivery: scoping, prototype development, debugging, evaluation, and implementation planning.
+          </p>
         </div>
-        <div class="hero-card">
-          <h2>Company focus</h2>
-          <div class="fact"><strong>AI/ML</strong><span>Model development, evaluation, and deployment planning</span></div>
-          <div class="fact"><strong>Edge systems</strong><span>Embedded AI, computer vision, and device-aware software</span></div>
-          <div class="fact"><strong>Automation</strong><span>Data pipelines, dashboards, and operational decision support</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="services">
-      <div class="wrap">
-        <h2>Services</h2>
-        <p class="section-lead">We support organizations that need technical execution, prototype development, or AI strategy translated into working systems.</p>
-        <div class="cards">
-          <div class="card"><h3>AI and Machine Learning</h3><p>Model development, data preparation, evaluation workflows, anomaly detection, and proof-of-concept systems.</p></div>
-          <div class="card"><h3>Computer Vision</h3><p>Image and video analysis, object detection workflows, edge vision prototypes, and operational monitoring use cases.</p></div>
-          <div class="card"><h3>Embedded and Edge AI</h3><p>AI deployment planning for resource-constrained devices, IoT platforms, and field-operational environments.</p></div>
-          <div class="card"><h3>Automation and Analytics</h3><p>Business process automation, reporting dashboards, data pipelines, and decision-support tools.</p></div>
-          <div class="card"><h3>Technical Documentation</h3><p>Requirements, architecture notes, implementation plans, training materials, and deployment documentation.</p></div>
-          <div class="card"><h3>Government and Vendor Support</h3><p>Capability statements, technical scopes, proposal support, and subcontractor-ready project descriptions.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="capabilities" class="band">
-      <div class="wrap">
-        <h2>Core capabilities</h2>
-        <p class="section-lead">VerbaEdge is built for practical AI work where models must connect to real devices, data, users, and operational constraints.</p>
-        <div class="pill-list">
-          <span class="pill">Machine learning engineering</span><span class="pill">Computer vision</span><span class="pill">Edge AI prototyping</span><span class="pill">Embedded systems</span><span class="pill">Data pipelines</span><span class="pill">Anomaly detection</span><span class="pill">Workflow automation</span><span class="pill">Technical documentation</span><span class="pill">Proposal-ready scopes</span>
+        <div class="skills-cloud" aria-label="Upwork profile skills">
+          <span>Artificial Intelligence</span>
+          <span>Machine Learning</span>
+          <span>Chatbot Development</span>
+          <span>Generative AI</span>
+          <span>Computer Vision</span>
+          <span>Natural Language Processing</span>
+          <span>Python Development</span>
+          <span>AI Consulting</span>
+          <span>Data Science</span>
+          <span>Embedded Systems</span>
+          <span>Automation</span>
+          <span>Deep Learning</span>
+          <span>Embedded Linux</span>
+          <span>OpenCV</span>
+          <span>Time Series Analysis</span>
+          <span>API Integration</span>
+          <span>Prompt Engineering</span>
+          <span>Edge AI</span>
+          <span>Large Language Models</span>
         </div>
       </div>
     </section>
 
-    <section id="industries">
-      <div class="wrap two-col">
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Services</p>
+            <h2>Focused technical services for early AI work and small business implementation.</h2>
+          </div>
+          <p>
+            VerbaEdge is strongest where the client needs a practical technical partner: a clear scope, a prototype, an engineering review, a debugging sprint, or a documented path from concept to implementation.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <div class="card-icon">AI</div>
+            <h3>AI and ML Engineering</h3>
+            <p>Model workflows, data preparation, ML debugging, anomaly detection, evaluation plans, and working proof-of-concept systems.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">RAG</div>
+            <h3>RAG Chatbots and LLM Evaluation</h3>
+            <p>Document-grounded AI assistants, retrieval workflows, source-aware answers, prompt testing, benchmark design, and response-quality evaluation.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">CV</div>
+            <h3>Computer Vision</h3>
+            <p>Image analysis, object detection, OCR planning, inspection prototypes, model evaluation, and computer-vision feasibility testing.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">ED</div>
+            <h3>Edge AI and Embedded ML</h3>
+            <p>Hardware-aware AI deployment planning, embedded Linux workflows, model conversion considerations, latency constraints, and edge inference support.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">PY</div>
+            <h3>Python Development and APIs</h3>
+            <p>Python scripts, data pipelines, API integrations, dashboards, prototype backends, automation utilities, and technical handoff documentation.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">AUTO</div>
+            <h3>Business Workflow Automation</h3>
+            <p>AI-assisted workflows, review-response drafts, document processing, internal tools, decision-support prototypes, and operations-focused automation.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="portfolio">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Upwork agency portfolio</p>
+            <h2>Portfolio examples used to show VerbaEdge’s technical capability.</h2>
+          </div>
+          <p>
+            These portfolio examples support the agency’s AI, computer vision, edge AI, embedded systems, and technical documentation positioning.
+          </p>
+        </div>
+
+        <div class="note" role="note">
+          Portfolio accuracy note: these examples are technical work samples associated with VerbaEdge’s Upwork agency profile and were completed by the technical lead before VerbaEdge was formed. They should be understood as capability demonstrations, not VerbaEdge client engagements.
+        </div>
+
+        <div class="portfolio-grid" style="margin-top: 24px;">
+          <article class="project-card">
+            <div class="project-visual">
+              <img src="assets/portfolio/upwork-portfolio-image-classifier-edge-hardware.png" alt="Portfolio cover illustration for deploying an image classifier to edge hardware">
+            </div>
+            <div class="project-body">
+              <p class="eyebrow">Portfolio example · Edge AI</p>
+              <h3>Deploying an Image Classifier to Edge Hardware</h3>
+              <p><strong>Portfolio goal:</strong> Show a full workflow for preparing image data, training an image-classification model, validating results, and deploying the model to edge hardware.</p>
+              <p><strong>What it demonstrates:</strong> Computer vision, machine learning, transfer-learning workflow, model validation, embedded deployment planning, and edge-inference thinking.</p>
+              <p><strong>Business relevance:</strong> Useful for clients evaluating inspection systems, image-classification prototypes, model deployment feasibility, or device-side AI workflows.</p>
+              <div class="project-meta">
+                <span class="tag">Machine Learning</span>
+                <span class="tag">Computer Vision</span>
+                <span class="tag">Edge AI</span>
+                <span class="tag">Embedded Systems</span>
+                <span class="tag">Model Deployment</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-visual">
+              <img src="assets/portfolio/upwork-portfolio-cpp-edge-ai-application.png" alt="Portfolio cover illustration for a C++ edge AI application with accelerated inference">
+            </div>
+            <div class="project-body">
+              <p class="eyebrow">Portfolio example · C++ and embedded AI</p>
+              <h3>C++ Edge AI Application with Accelerated Inference</h3>
+              <p><strong>Portfolio goal:</strong> Show how a machine-learning model can be integrated into a C++ Linux application that uses camera input and runs inference on embedded hardware.</p>
+              <p><strong>What it demonstrates:</strong> C++ integration, embedded Linux development, camera-based inference, model packaging, build workflow setup, and accelerated edge-AI deployment.</p>
+              <p><strong>Business relevance:</strong> Useful for clients exploring camera-based quality control, edge-device prototypes, hardware-aware AI applications, or applied computer-vision demos.</p>
+              <div class="project-meta">
+                <span class="tag">C++</span>
+                <span class="tag">Linux</span>
+                <span class="tag">Camera Input</span>
+                <span class="tag">Computer Vision</span>
+                <span class="tag">Edge Inference</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-visual">
+              <img src="assets/portfolio/upwork-portfolio-yocto-network-boot.png" alt="Portfolio cover illustration for Yocto Linux image build and network boot workflow">
+            </div>
+            <div class="project-body">
+              <p class="eyebrow">Portfolio example · Embedded Linux</p>
+              <h3>Yocto Linux Image Build and Network Boot for Edge Device</h3>
+              <p><strong>Portfolio goal:</strong> Show a reproducible workflow for building a Yocto-based Linux image and preparing an edge device for network boot from a Linux host.</p>
+              <p><strong>What it demonstrates:</strong> Embedded Linux build environment setup, Yocto image creation, board configuration, NFS-based network boot preparation, and technical documentation.</p>
+              <p><strong>Business relevance:</strong> Useful for clients that need embedded-device setup, edge-device deployment planning, custom Linux workflows, or technical implementation documentation.</p>
+              <div class="project-meta">
+                <span class="tag">Embedded Linux</span>
+                <span class="tag">Yocto</span>
+                <span class="tag">Network Boot</span>
+                <span class="tag">Build Systems</span>
+                <span class="tag">Edge Devices</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="engagements">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Engagement options</p>
+            <h2>Start with a small, funded milestone.</h2>
+          </div>
+          <p>
+            For new clients, the best first step is a scoped technical milestone that produces a concrete deliverable without forcing a large project commitment.
+          </p>
+        </div>
+
+        <div class="grid-3 pricing">
+          <article class="card">
+            <h3>AI / ML Technical Diagnostic</h3>
+            <p>Review an existing AI idea, dataset, workflow, codebase, or model problem and produce a practical technical plan.</p>
+            <ul>
+              <li>Problem review</li>
+              <li>Feasibility notes</li>
+              <li>Implementation roadmap</li>
+              <li>Risk and next-step recommendations</li>
+            </ul>
+          </article>
+          <article class="card featured">
+            <h3>Prototype Sprint</h3>
+            <p>Build a small proof of concept for a chatbot, ML workflow, computer-vision task, automation flow, or Python-based technical tool.</p>
+            <ul>
+              <li>Defined input and output</li>
+              <li>Working prototype or notebook</li>
+              <li>Basic testing notes</li>
+              <li>Handoff documentation</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Edge AI Deployment Review</h3>
+            <p>Evaluate whether a model or AI workflow can run on edge or embedded hardware under real-world limits.</p>
+            <ul>
+              <li>Hardware and model review</li>
+              <li>Latency and resource constraints</li>
+              <li>Deployment path analysis</li>
+              <li>Recommended architecture</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-card">
         <div>
-          <h2>Industries</h2>
-          <p class="section-lead">We focus on organizations that need applied AI and edge intelligence to improve safety, reliability, monitoring, or operational speed.</p>
+          <p class="eyebrow">Contact</p>
+          <h2>Have an AI, ML, computer-vision, or edge-AI project?</h2>
+          <p>
+            Send a short description of the problem, available data or code, desired outcome, timeline, and any technical constraints. VerbaEdge can respond with a scoped first milestone.
+          </p>
         </div>
-        <div class="cards" style="grid-template-columns:1fr 1fr; margin-top:0;">
-          <div class="card"><h3>Healthcare technology</h3><p>Monitoring, decision-support, and AI-assisted workflow tools.</p></div>
-          <div class="card"><h3>Energy and infrastructure</h3><p>Field data, predictive monitoring, and intelligent operations.</p></div>
-          <div class="card"><h3>Manufacturing</h3><p>Vision inspection, anomaly detection, and automation support.</p></div>
-          <div class="card"><h3>Public-sector vendors</h3><p>Technical subcontracting, proposal support, and prototype execution.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" style="background:#f8fafc;">
-      <div class="wrap two-col">
-        <div>
-          <h2>Contact VerbaEdge</h2>
-          <p class="section-lead">For contracts, technical scopes, vendor discussions, or subcontracting opportunities, contact the company directly.</p>
-        </div>
-        <div class="contact-card">
-          <p><strong>Legal name:</strong> VerbaEdge Systems LLC</p>
-          <p><strong>Location:</strong> Arizona, United States</p>
-          <!-- <p><strong>Business contact:</strong> Jack Miller | Sr. Project Manager</p> -->
-          <p><strong>Email:</strong> <a href="mailto:contracts@verbaedge.com">contracts@verbaedge.com</a></p>
-          <p><strong>Website:</strong> <a href="https://verbaedge.com">verbaedge.com</a></p>
-          <p class="small">Use company email for contracts, vendor registration, proposals, and official business communications.</p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:contracts@verbaedge.com?subject=Project%20Inquiry%20for%20VerbaEdge%20Systems%20LLC">contracts@verbaedge.com</a>
+          <a class="btn" href="https://www.upwork.com/agencies/2070672183064581036/" target="_blank" rel="noopener noreferrer">Open Upwork profile</a>
         </div>
       </div>
     </section>
   </main>
-  <footer><div class="wrap">© 2026 VerbaEdge Systems LLC. All rights reserved.</div></footer>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>VerbaEdge Systems LLC</strong>
+        <p>Arizona-based applied AI, machine learning, computer vision, edge AI, embedded systems, and automation services.</p>
+      </div>
+      <div>
+        <a href="mailto:contracts@verbaedge.com">contracts@verbaedge.com</a>
+        <a href="https://www.upwork.com/agencies/2070672183064581036/" target="_blank" rel="noopener noreferrer">Upwork agency profile</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
