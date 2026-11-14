@@ -1,14 +1,15 @@
 # Main homepage activation candidate
 
 The owner approved merging and deployment in the current conversation; that
-approval persists. Repository creation and app access are resolved, and the
-source PR #1 is merged in both subsite repositories. Pages enablement still
-returns HTTP 403, Resource not accessible by integration, for both repositories;
-the owner has been asked to enable Pages from main / (root) in Settings. Both
-planned subdomains remained NXDOMAIN at 2026-11-14T06:20:26Z. Main activation
-PR #2 remains a draft: this branch prepares the candidate and does not mean
-activation has occurred. Enable and test the temporary Pages sites, complete
-custom-domain/DNS setup, and pass both subdomain tests before merging.
+approval persists. Both separate sites are enabled in Pages and passed all
+32 original root/asset HTTP and hash checks at their initial Pages URLs. Their
+custom-domain PR #2 changes are merged, both matching domain builds are
+confirmed built, and GitHub confirms the Systems and Logistics CNAME settings. Both domains still returned NXDOMAIN at
+2026-11-14T06:39:30Z; certificate fields are null and HTTPS enforcement is not
+yet enabled. The owner has been asked to add the two DNS CNAME records. No
+additional Pages or GitHub domain-setting action is needed. Main activation
+PR #2 remains a draft until DNS, certificates, and both custom-subdomain HTTPS
+tests pass; the original live main homepage remains unchanged.
 
 ## Candidate changes
 

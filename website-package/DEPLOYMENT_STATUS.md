@@ -1,118 +1,102 @@
 # Deployment status after owner authorization
 
 The owner approved merge and deployment in the working conversation. That
-approval remains applicable; no repeat approval is required for this scope.
-Repository creation and source access are resolved. Pages administration and
-custom-domain setup remain blocked by service permissions and DNS configuration.
+approval persists. Repository creation, app access, Pages enablement, initial
+Pages tests, and GitHub custom-domain configuration are complete. DNS access
+is the remaining external blocker; certificates and custom-domain HTTPS tests
+must follow before main activation.
 
 ## Completed
 
 - Merged main preparation [PR #1](https://github.com/VerbaEdge/VerbaEdge.github.io/pull/1)
-  at `76666e0b5d586f006ea998f3b462892aa96c2306`. GitHub Pages reports a successful
-  build; the live homepage returns HTTPS 200 and remains byte-for-byte identical
-  to the original baseline.
-- Main remains branch-based Pages from `main` / `/`, with `verbaedge.com` and
-  HTTPS enforcement retained. No DNS or main domain settings were changed.
-- Retained verified full-history backups before editing and after the approved
-  main preparation merge.
-- Verified all 32 Systems/Logistics root and asset responses at the public
-  staged paths beneath `https://verbaedge.com/website-package/sites/` against
-  reviewed source hashes. One temporary robots response returned 503; its retry
-  returned the correct 200 body. These staged-path checks are separate from
-  actual project Pages and custom-subdomain acceptance tests.
-- The owner created public `VerbaEdge/verbaedge-systems` and
-  `VerbaEdge/verbaedge-logistics` and granted the connected app access.
-- Merged Systems source [PR #1](https://github.com/VerbaEdge/verbaedge-systems/pull/1)
-  at `1044c892a66d9cf19a25c025f88fce3bf580fa20` and Logistics source
-  [PR #1](https://github.com/VerbaEdge/verbaedge-logistics/pull/1) at
-  `7be3d33251d1ca33b07b289ec43d904bb16c9950`.
-- Each subsite repository contains its 16 original reviewed site files with
-  exact matching hashes, plus a public README and source hash manifest. No
-  private source material is included. Full-history bundles were backed up
-  locally before and after both subsite source merges.
-- Opened separate draft custom-domain [Systems PR #2](https://github.com/VerbaEdge/verbaedge-systems/pull/2)
-  and [Logistics PR #2](https://github.com/VerbaEdge/verbaedge-logistics/pull/2).
-  Both are unmerged; domain files are not applied to the publishing branches.
-- Prepared the main activation candidate as draft
-  [PR #2](https://github.com/VerbaEdge/VerbaEdge.github.io/pull/2), retaining
-  original section anchors, visible engineering portfolio, assets/CNAME, and
-  the complete original page. Its static activation check passes. See
-  [ACTIVATION.md](ACTIVATION.md).
+  at `76666e0b5d586f006ea998f3b462892aa96c2306`. Its Pages build succeeded.
+  The live main homepage remains byte-for-byte identical to the baseline,
+  with `verbaedge.com`, `main` / `/`, and existing HTTPS enforcement retained.
+- Retained verified full-history backups before preparation and after the
+  main preparation merge. Pre/post source and domain merge bundles are also
+  backed up and verified locally for both subsite repositories.
+- Verified 32 original Systems/Logistics root and asset responses at staged
+  paths beneath `https://verbaedge.com/website-package/sites/`. These staging
+  checks are separate from the actual Pages deployment checks below.
+- The owner created both public subsite repositories and granted app access.
+  Source [Systems PR #1](https://github.com/VerbaEdge/verbaedge-systems/pull/1)
+  merged at `1044c892a66d9cf19a25c025f88fce3bf580fa20`; source
+  [Logistics PR #1](https://github.com/VerbaEdge/verbaedge-logistics/pull/1)
+  merged at `7be3d33251d1ca33b07b289ec43d904bb16c9950`.
+- Each original set of 16 supplied site files matches reviewed hashes exactly,
+  accompanied by a public README and source manifest. Private source material
+  is excluded.
+- The owner enabled Pages in both repositories. API reads confirmed `main` /
+  `/` sources and initial builds at the expected source merge commits. The
+  earlier Pages API permission failure was resolved by this owner action;
+  no further Pages-enablement action is needed.
+- Both actual initial Pages URLs passed all **32/32** original root and asset
+  response/hash checks: `https://verbaedge.com/verbaedge-systems/` and
+  `https://verbaedge.com/verbaedge-logistics/`. Evidence is retained locally in
+  `initial-pages-live-verified.json`. These are initial Pages checks, not
+  custom-subdomain HTTPS acceptance tests.
+- After those tests, merged authorized custom-domain
+  [Systems PR #2](https://github.com/VerbaEdge/verbaedge-systems/pull/2) at
+  `111f1ca4a522b09f856be18945c15553c3c375f4` and
+  [Logistics PR #2](https://github.com/VerbaEdge/verbaedge-logistics/pull/2) at
+  `3452919cb22f118267b1b04f56762bd29fa4ecdd`.
+- GitHub Pages now confirms `systems.verbaedge.com` and
+  `logistics.verbaedge.com` from the merged CNAME files. No additional owner
+  custom-domain setting is needed. Both domain builds are confirmed built at
+  their matching merge SHAs: Systems updated `2026-11-14T06:40:31Z`, Logistics
+  updated `2026-11-14T06:40:43Z`.
+- Main activation [PR #2](https://github.com/VerbaEdge/VerbaEdge.github.io/pull/2)
+  remains a draft. Its static activation check passes; it retains original
+  section anchors, visible engineering portfolio, assets/CNAME, and a complete
+  preserved original page. See [ACTIVATION.md](ACTIVATION.md).
 
-## Current blockers
+## Current blocker: DNS
 
-The app can push source and merge pull requests, but cannot enable Pages.
-`POST /repos/{owner}/{repo}/pages` returns HTTP 403, **Resource not accessible by
-integration**, for both subsite repositories. This is a Pages administration
-permission limitation, not a repository creation or source/build failure.
-The owner has been asked to enable Pages in each repository's settings; no
-Pages-enabled confirmation has been received yet. API `GET /pages` returns 404
-for both repositories after their source merges.
+The latest recorded check at `2026-11-14T06:39:30Z` returned NXDOMAIN for both
+`systems.verbaedge.com` and `logistics.verbaedge.com` through Google and
+Cloudflare. Neither custom-domain HTTPS connection reached an origin. Apex A
+records and the original main homepage remained unchanged.
 
-The nominal initial URL `https://verbaedge.github.io/verbaedge-systems/` redirects
-to `https://verbaedge.com/verbaedge-systems/` and returns HTTP 404. The Logistics
-URL similarly redirects to `https://verbaedge.com/verbaedge-logistics/` and returns
-404. The account-level custom domain is inherited, but the separate Pages sites
-are not enabled. These are failed initial URL checks, not hosted-site passes.
+GitHub's current certificate fields are null and `https_enforced` is false
+for both subsites while DNS is pending. No certificate approval or working
+custom-domain HTTPS is claimed. A successful source or CNAME merge does not
+establish DNS propagation or certificate readiness.
 
-At `2026-11-14T06:20:26Z`, both Google and Cloudflare DNS checks still returned
-NXDOMAIN for `systems.verbaedge.com` and `logistics.verbaedge.com`. HTTPS could
-not reach either site. Apex A records were unchanged, and the existing main
-homepage still returned the exact baseline over HTTPS.
+## Required DNS action
 
-Neither subsite is established as hosted by a source merge. Initial temporary
-Pages URL tests and both custom-subdomain tests remain pending. No browser tool
-is callable in this managed environment, so rendered responsive, keyboard,
-and accessibility QA have not been performed.
-
-## Required account steps
-
-1. Open [Systems Settings → Pages](https://github.com/VerbaEdge/verbaedge-systems/settings/pages)
-   and [Logistics Settings → Pages](https://github.com/VerbaEdge/verbaedge-logistics/settings/pages).
-   Under **Build and deployment**, set **Source: Deploy from a branch**, choose **main** and **/(root)**, then
-   **Save**. Repository creation and app access do not need repeating.
-2. After Pages builds, the agent can test each temporary URL displayed by
-   GitHub, including redirects, all supplied site files, downloads and demos.
-   No manual source/HTTP checks are required from the owner.
-3. Then complete each custom-domain setting and the two DNS records below.
-   The agent will attempt supported configuration using existing authorization;
-   owner assistance is needed if Pages administration still returns HTTP 403
-   or the DNS provider remains unavailable to the connection. Custom-domain
-   draft PR #2 in each subsite repository is separate from the initial Pages
-   source deployment; do not treat an open PR as applied domain configuration.
-
-| Repository | Intended Pages custom domain |
-| --- | --- |
-| `VerbaEdge/verbaedge-systems` | `systems.verbaedge.com` |
-| `VerbaEdge/verbaedge-logistics` | `logistics.verbaedge.com` |
+The owner has been asked to add the following records at the provider that
+controls `verbaedge.com`:
 
 | DNS type | Host | Target |
 | --- | --- | --- |
 | CNAME | `systems` | `VerbaEdge.github.io` |
 | CNAME | `logistics` | `VerbaEdge.github.io` |
 
-The intended names come from the supplied source. Neither is claimed active.
-Existing nameservers are `dns1.registrar-servers.com` and
-`dns2.registrar-servers.com`, consistent with Namecheap DNS hosting; use the
-provider that actually controls the zone. Preserve apex, `www`, email and
-unrelated records. Once domain configuration is applied, wait for DNS and valid
-HTTPS before accepting the subdomains.
+Use a hostname target without a scheme or repository path. Preserve all
+existing apex, `www`, email, verification, and unrelated records. Nameservers
+are `dns1.registrar-servers.com` and `dns2.registrar-servers.com`, consistent
+with Namecheap DNS hosting. Repository creation, app grants, Pages enablement,
+and GitHub custom-domain entry do not need repeating.
 
 ## Remaining verification and main activation gate
 
-Run the live checker first against each actual temporary Pages URL, then
-against both intended custom domains. It verifies status, redirect destination,
-HTTPS through the configured trusted network, and exact reviewed bytes for both
-roots and every supplied public file. It does not independently inspect the
-origin certificate through the managed proxy or replace a real browser.
+After DNS is applied, verify both CNAMEs, wait for certificate issuance, and
+enable/verify HTTPS when GitHub permits it.
+Run the live checker against both intended custom domains. It checks status,
+redirect destinations, trusted proxied HTTPS, and exact reviewed bytes for both
+roots and all supplied public files. It cannot independently inspect origin
+certificates through the managed proxy.
 
 ```sh
 python3 -B scripts/verify_website_package.py --activated-main
 python3 -B scripts/verify_live_subsites.py
 ```
 
-Keep main activation PR #2 in draft and unmerged until both intended subdomain
-sites pass their live tests. The owner approval persists. Further owner action
-is needed only for Pages settings and, if the connection cannot perform them,
-custom-domain/DNS configuration. The current main homepage stays preserved while
-those deployment prerequisites are unresolved.
+No browser tool is callable in this managed environment; rendered responsive,
+keyboard, and accessibility QA remain unperformed. Initial Pages HTTP/hash
+checks do not replace browser QA or the pending custom-subdomain tests.
+
+Keep main activation PR #2 in draft and unmerged until **both** custom-domain
+HTTPS tests pass. The owner approval persists; no repeat approval is needed
+for the authorized deployment. The original main homepage stays preserved
+while DNS, certificates, and the live acceptance tests remain unresolved.
