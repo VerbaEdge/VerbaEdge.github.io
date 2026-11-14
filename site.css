@@ -5,3 +5,72 @@
 
 /* Keep long division names readable on narrow screens. */
 @media(max-width:650px){.brand{min-width:0;max-width:100%;white-space:normal}.brand img{flex-shrink:0}.brand span{min-width:0;overflow-wrap:anywhere}}
+
+
+/* VerbaEdge typography and responsive layout refinement — Nov 2026 */
+:root { --max: 1140px; }
+body { font-size: 16px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+h1 { font-size: clamp(2.55rem, 4.75vw, 4.5rem); line-height: 1.085; letter-spacing: -.046em; text-wrap: balance; }
+h2 { font-size: clamp(1.8rem, 3.05vw, 2.83rem); line-height: 1.17; letter-spacing: -.036em; text-wrap: balance; }
+h3 { font-size: clamp(1.21rem, 1.65vw, 1.39rem); line-height: 1.32; letter-spacing: -.025em; }
+.hero { padding: clamp(3.4rem, 6vw, 5.1rem) 0; }
+.hero-grid { grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: clamp(1.75rem, 4vw, 3.2rem); }
+.lead { max-width: 63ch; font-size: clamp(1.05rem, 1.3vw, 1.125rem); line-height: 1.65; }
+.eyebrow { font-size: .77rem; line-height: 1.55; letter-spacing: .12em; }
+.section { padding: clamp(3.3rem, 5.5vw, 4.7rem) 0; }
+.heading p { max-width: 71ch; line-height: 1.67; }
+.card { padding: clamp(1.25rem, 2vw, 1.75rem); }
+.card p { font-size: .99rem; line-height: 1.68; }
+.card h3 { margin-top: .5rem; }
+.platform { min-height: 0; padding: clamp(1.3rem, 2.65vw, 1.8rem); }
+.platform-top { margin-bottom: 1.35rem; font-size: .78rem; letter-spacing: .07em; line-height: 1.45; }
+.stack-item { padding: 1rem 1.15rem; }
+.stack-item strong { font-size: 1.035rem; line-height: 1.35; }
+.stack-item span { font-size: .91rem; line-height: 1.58; }
+.stack-item small { font-size: .75rem; line-height: 1.6; letter-spacing: .075em; }
+.stack-arrow { line-height: .7; }
+.brand { min-width: 0; white-space: normal; }
+.brand img { flex-shrink: 0; }
+.brand span { min-width: 0; overflow-wrap: anywhere; }
+.brand small { font-size: .69rem; letter-spacing: .04em; overflow-wrap: anywhere; }
+.header-inner { gap: 1rem 1.5rem; }
+.menu { gap: .7rem 1.15rem; }
+.menu a { font-size: .89rem; line-height: 1.45; }
+.mini-bar .wrap { gap: .4rem 1.15rem; }
+.mini-bar a { font-size: .82rem; }
+.button { min-height: 46px; line-height: 1.38; text-align: center; white-space: normal; }
+.micro { font-size: .875rem; line-height: 1.6; }
+.tag { font-size: .75rem; line-height: 1.45; letter-spacing: .035em; }
+.contact-block { grid-template-columns: minmax(0, 1fr) minmax(0, .74fr); gap: clamp(1.5rem, 3vw, 2.25rem); padding: clamp(1.5rem, 3vw, 2.4rem); }
+:where(.card,.contact-block,.platform,.stack-item,.hero-grid,.columns,.grid-2,.grid-3) { min-width: 0; }
+:where(h1,h2,h3,p,a) { overflow-wrap: break-word; }
+input, select, textarea, button { max-width: 100%; }
+input, select, textarea { min-width: 0; }
+@media (max-width: 900px) {
+  .hero-grid, .columns, .contact-block { grid-template-columns: 1fr; }
+  .hero { padding: 3.8rem 0 3.5rem; }
+  .platform { max-width: 720px; }
+}
+@media (max-width: 650px) {
+  html { scroll-padding-top: 140px; }
+  .header-inner { gap: 12px; padding: 12px 0; }
+  .menu { gap: .65rem 1rem; }
+  .hero { padding: 3.25rem 0 3rem; }
+  .hero-grid { gap: 1.75rem; }
+  h1 { font-size: clamp(2.1rem, 8.75vw, 2.85rem); line-height: 1.12; letter-spacing: -.037em; }
+  h2 { font-size: clamp(1.7rem, 7.6vw, 2.2rem); }
+  h3 { font-size: 1.21rem; }
+  .lead { font-size: 1.035rem; line-height: 1.67; }
+  .platform { padding: 1.15rem; }
+  .stack-item { padding: .95rem 1rem; }
+  .section { padding: 3.3rem 0; }
+  .card { padding: 1.3rem; }
+  .mini-bar .wrap { justify-content: center; }
+  .contact-block { padding: 1.35rem; }
+}
+@media (max-width: 360px) {
+  h1 { font-size: 2.12rem; }
+  .brand small { font-size: .64rem; }
+  .actions .button { width: 100%; }
+  .mini-bar .wrap { gap: .35rem .8rem; }
+}
