@@ -1,28 +1,39 @@
 # VerbaEdge Systems LLC
 
-Official website for VerbaEdge Systems LLC.
-
-Website: https://verbaedge.com
+Official company website: https://verbaedge.com/
 
 Contact: [contracts@verbaedge.com](mailto:contracts@verbaedge.com)
 
-This repository hosts the public VerbaEdge website through GitHub Pages.
+## Published websites
 
-## Integrated website activation candidate
+| Website | Repository |
+| --- | --- |
+| [VerbaEdge overview](https://verbaedge.com/) | `VerbaEdge/VerbaEdge.github.io` |
+| [VerbaEdge Systems](https://systems.verbaedge.com/) | `VerbaEdge/verbaedge-systems` |
+| [Trade & Logistics Technology](https://logistics.verbaedge.com/) | `VerbaEdge/verbaedge-logistics` |
 
-This branch prepares the main overview while retaining the complete original
-engineering website at `engineering/`, the original portfolio assets, and the
-exact root `CNAME`. Systems and Trade & Logistics Technology remain independent
-sites with their own repositories and intended subdomains. Private management
-and finance sources are excluded.
+The complete original engineering website is retained at
+[verbaedge.com/engineering/](https://verbaedge.com/engineering/). The original
+portfolio assets, stylesheet, branding and main CNAME remain preserved.
+The main overview retains the original section anchors and visible portfolio.
 
-The owner approved merge and deployment. The preparation PR is merged; this
-activation must wait for the separate sites and their domains to work. See
-[deployment status and required account steps](website-package/DEPLOYMENT_STATUS.md),
-[activation details](website-package/ACTIVATION.md), and the
-[deployment plan](website-package/DEPLOYMENT.md).
+The owner approved deployment. All three repositories use separate GitHub Pages
+sites; main activation followed successful checks on both custom subdomains.
+Private strategy and finance sources are excluded.
 
-Run `python3 -B scripts/verify_website_package.py --activated-main` for this
-candidate. Run `python3 -B scripts/verify_live_subsites.py` to check both deployed
-subdomains and their supplied files before activation. Historical preparation
-checks are recorded in [VALIDATION.md](website-package/VALIDATION.md).
+See [the final deployment record](website-package/DEPLOYMENT_STATUS.md),
+[activation and rollback details](website-package/ACTIVATION.md), and the
+[historical source inspection](website-package/INSPECTION.md).
+
+## Repeatable checks
+
+```sh
+python3 -B scripts/verify_website_package.py --activated-main
+node scripts/test_demos.cjs
+python3 -B scripts/test_rag_projects.py
+python3 -B scripts/verify_live_subsites.py
+python3 -B scripts/verify_live_main.py
+```
+
+Use branches and pull requests for future changes. Obtain authorization before
+changing live configuration. Preserve root CNAME and email/domain records.
