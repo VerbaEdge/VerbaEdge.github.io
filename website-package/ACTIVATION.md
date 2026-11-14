@@ -1,11 +1,14 @@
 # Main homepage activation candidate
 
-The owner approved merging and deployment in the current conversation. This
-branch prepares the main activation for review; it does not mean activation has
-occurred. The draft must remain unmerged while the two separate subsite
-deployments are blocked. Repository creation currently returns HTTP 403, and
-both planned subdomains return NXDOMAIN. Resolve those prerequisites and test
-both sites before merging this activation branch.
+The owner approved merging and deployment in the current conversation; that
+approval persists. Repository creation and app access are resolved, and the
+source PR #1 is merged in both subsite repositories. Pages enablement still
+returns HTTP 403, Resource not accessible by integration, for both repositories;
+the owner has been asked to enable Pages from main / (root) in Settings. Both
+planned subdomains remained NXDOMAIN at 2026-11-14T06:20:26Z. Main activation
+PR #2 remains a draft: this branch prepares the candidate and does not mean
+activation has occurred. Enable and test the temporary Pages sites, complete
+custom-domain/DNS setup, and pass both subdomain tests before merging.
 
 ## Candidate changes
 
