@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://verbaedge.com/sitemap.xml

@@ -8,15 +8,21 @@ Contact: [contracts@verbaedge.com](mailto:contracts@verbaedge.com)
 
 This repository hosts the public VerbaEdge website through GitHub Pages.
 
-## Staged three-site package
+## Integrated website activation candidate
 
-The current publishing files are preserved. The supplied integrated package is
-prepared separately in [website-package/](website-package/README.md), with
-Systems and Trade & Logistics Technology kept as independent planned GitHub
-Pages sites. Private management and finance sources are excluded.
+This branch prepares the main overview while retaining the complete original
+engineering website at `engineering/`, the original portfolio assets, and the
+exact root `CNAME`. Systems and Trade & Logistics Technology remain independent
+sites with their own repositories and intended subdomains. Private management
+and finance sources are excluded.
 
-See the [inspection record](website-package/INSPECTION.md),
-[validation results](website-package/VALIDATION.md), and
+The owner approved merge and deployment. The preparation PR is merged; this
+activation must wait for the separate sites and their domains to work. See
+[deployment status and required account steps](website-package/DEPLOYMENT_STATUS.md),
+[activation details](website-package/ACTIVATION.md), and the
 [deployment plan](website-package/DEPLOYMENT.md).
-Use a branch and pull request; obtain approval before merging or changing live
-configuration. Test both subdomains before proposing the main homepage change.
+
+Run `python3 -B scripts/verify_website_package.py --activated-main` for this
+candidate. Run `python3 -B scripts/verify_live_subsites.py` to check both deployed
+subdomains and their supplied files before activation. Historical preparation
+checks are recorded in [VALIDATION.md](website-package/VALIDATION.md).
