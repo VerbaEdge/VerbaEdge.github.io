@@ -1,0 +1,28 @@
+{
+  "status": "Prepared activation candidate; draft and unmerged pending both subdomain tests",
+  "source_package_commit": "45fb2c3e4dedce03652a9a1672ca78846928dff0",
+  "historical_baseline_commit": "b7ae70f7afcfd40ab120bf11b0c389dbab00dc06",
+  "historical_preservation_manifest": "preserved-files.json",
+  "changes": [
+    "Overlay supplied main public files without deleting original assets or stylesheet",
+    "Add original portfolio directory and meaningful legacy fragment targets to root homepage",
+    "Preserve complete original overview at engineering/index.html with adjusted relative paths and noindex archive metadata"
+  ],
+  "activation_files": {
+    ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "CNAME": "ee3f26eefdb6dacd1d7f463fdbb41da0d8696e0ed8f526c61398e6009ef12620",
+    "assets/brand/verbaedge-logo-180.png": "75aaf014d2d1273312c1d12e49982008ded27ec310ae498bac3981fc70c57675",
+    "assets/brand/verbaedge-logo.svg": "1a5faa859b7a308f52c1e7c55684e1fa9beebed77f2ad10a8e4258f6b804af33",
+    "downloads/VerbaEdge_RAG_3_Portfolio_Projects.zip": "f45737baba872b599a2334e96328d0cac3767f0fd60afd9fa33b42280521d948",
+    "engineering/index.html": "d7cf02358d5de6338d635c41bb48cad67abdc90c6c66c3be7638e1bb2a40ec3a",
+    "favicon-32.png": "e5f690592f29deeec6dc2e6b110a1c7990470716f1aa0a9e06265f549412b151",
+    "favicon.svg": "1a5faa859b7a308f52c1e7c55684e1fa9beebed77f2ad10a8e4258f6b804af33",
+    "index.html": "272f930706633212097792aecd88335f8dd53765ba7cf4fecb5cf256c8655d0f",
+    "portfolio/access-control.html": "374fcb0858b4636fcf14122023dad1f3f7cb8d1d44d65f2ee9e5520b4b1abf0e",
+    "portfolio/citation-context.html": "ee24a95e4c952e0a27e25bafb30dbafda312cdf4660874984306cf7c714d3e19",
+    "portfolio/retrieval-metadata.html": "27c54b9338db54190aec81b89efa6c5da428f593f3e608bbfb4dfb4678b656ab",
+    "robots.txt": "cc2e4edde1de59f0010d03a6cb11e9c1670f736590fc44a4f83548bf1c2ea374",
+    "site.css": "9ccbec0b81e287de5997177ab4964643f9c82c26796d40334f4941612fbacaed",
+    "sitemap.xml": "666e6b0b3e40f4b1c19e7ca05c234b90cc9ed922a43db79f940f7a4d1eb110cc"
+  }
+}

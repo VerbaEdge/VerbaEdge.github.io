@@ -24,3 +24,11 @@ See [website-package/DEPLOYMENT.md](website-package/DEPLOYMENT.md) for the exact
 site map, approval gates, acceptance checks, and rollback requirements. A merge
 of the preparation package does not authorize homepage activation or live
 configuration changes.
+
+The owner has since authorized this deployment in the working conversation.
+See [current status](website-package/DEPLOYMENT_STATUS.md) for the merged
+preparation and remaining external account steps. The activation branch uses
+`python3 -B scripts/verify_website_package.py --activated-main` because its
+reviewed root homepage intentionally differs from the historical baseline.
+The other eleven original protected files and the preserved full engineering
+page are still verified. Main activation waits for both live subdomains.

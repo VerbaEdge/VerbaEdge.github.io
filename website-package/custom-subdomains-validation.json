@@ -1,0 +1,295 @@
+{
+  "checked_at_utc": "2026-11-14T06:53:18.126754+00:00",
+  "passed": true,
+  "checks": [
+    {
+      "site": "systems",
+      "url": "https://systems.verbaedge.com/",
+      "path": "/",
+      "passed": true,
+      "status": 200,
+      "final_url": "https://systems.verbaedge.com/",
+      "sha256": "df0336f4ee72329119471a47d366db57fa7cc45b6ba56ae457ae741a7cb340a2"
+    },
+    {
+      "site": "logistics",
+      "url": "https://logistics.verbaedge.com/",
+      "path": "/",
+      "passed": true,
+      "status": 200,
+      "final_url": "https://logistics.verbaedge.com/",
+      "sha256": "f5515e5f3c4a7f32c3e546160108bb7b8e6fb9f0239fb7464bc34af2397cd318"
+    },
+    {
+      "site": "systems",
+      "url": "https://systems.verbaedge.com/assets/brand/verbaedge-logo-180.png",
+      "path": "assets/brand/verbaedge-logo-180.png",
+      "passed": true,
+      "status": 200,
+      "final_url": "https://systems.verbaedge.com/assets/brand/verbaedge-logo-180.png",
+      "sha256": "75aaf014d2d1273312c1d12e49982008ded27ec310ae498bac3981fc70c57675"
+    },
+    {
+      "site": "systems",
+      "url": "https://systems.verbaedge.com/assets/brand/verbaedge-logo.svg",
+      "path": "assets/brand/verbaedge-logo.svg",
+      "passed": true,
+      "status": 200,
+      "final_url": "https://systems.verbaedge.com/assets/brand/verbaedge-logo.svg",
+      "sha256": "1a5faa859b7a308f52c1e7c55684e1fa9beebed77f2ad10a8e4258f6b804af33"
+    },
+    {
+      "site": "systems",
+      "url": "https://systems.verbaedge.com/assets/portfolio/upwork-portfolio-cpp-edge-ai-application.png",
+      "path": "assets/portfolio/upwork-portfolio-cpp-edge-ai-application.png",
+      "passed": true,
+      "status": 200,
+      "final_url": "https://systems.verbaedge.com/assets/portfolio/upwork-portfolio-cpp-edge-ai-application.png",
+      "sha256": "6380683f1996c9f30b6091814ea921db2b6c37d3965f18c3691f8706546a7427"
+    },
+    {
+      "site": "systems",
+      "url": "https://systems.verbaedge.com/assets/portfolio/upwork-portfolio-image-classifier-edge-hardware.png",
+      "path": "assets/portfolio/upwork-portfolio-image-classifier-edge-hardware.png",
+      "passed": true,
+      "status": 200,
+      "final_url": "https://systems.verbaedge.com/assets/portfolio/upwork-portfolio-image-classifier-edge-hardware.png",
+      "sha256": "e36adede4287909e0d0add3a7cf70dd340915caba7e1aa2b89c2b50abb2d07f5"
+    },
+    {
+      "site": "systems",
+      "url": "https://systems.verbaedge.com/assets/portfolio/upwork-portfolio-yocto-network-boot.png",
+      "path": "assets/portfolio/upwork-portfolio-yocto-network-boot.png",
+      "passed": true,
+      "status": 200,
+      "final_url": "https://systems.verbaedge.com/assets/portfolio/upwork-portfolio-yocto-network-boot.png",
+      "sha256": "b33752f713b8871a771e824eaf07481e2b50eb47d6103a2108f844886ad8322e"
+    },
+    {
+      "site": "systems",
+      "url": "https://systems.verbaedge.com/downloads/VerbaEdge_RAG_3_Portfolio_Projects.zip",
+      "path": "downloads/VerbaEdge_RAG_3_Portfolio_Projects.zip",
+      "passed": true,
+      "status": 200,
+      "final_url": "https://systems.verbaedge.com/downloads/VerbaEdge_RAG_3_Portfolio_Projects.zip",
+      "sha256": "f45737baba872b599a2334e96328d0cac3767f0fd60afd9fa33b42280521d948"
+    },
+    {
+      "site": "systems",
+      "url": "https://systems.verbaedge.com/favicon-32.png",
+      "path": "favicon-32.png",
+      "passed": true,
+      "status": 200,
+      "final_url": "https://systems.verbaedge.com/favicon-32.png",
+      "sha256": "e5f690592f29deeec6dc2e6b110a1c7990470716f1aa0a9e06265f549412b151"
+    },
+    {
+      "site": "systems",
+      "url": "https://systems.verbaedge.com/favicon.svg",
+      "path": "favicon.svg",
+      "passed": true,
+      "status": 200,
+      "final_url": "https://systems.verbaedge.com/favicon.svg",
+      "sha256": "1a5faa859b7a308f52c1e7c55684e1fa9beebed77f2ad10a8e4258f6b804af33"
+    },
+    {
+      "site": "systems",
+      "url": "https://systems.verbaedge.com/index.html",
+      "path": "index.html",
+      "passed": true,
+      "status": 200,
+      "final_url": "https://systems.verbaedge.com/index.html",
+      "sha256": "df0336f4ee72329119471a47d366db57fa7cc45b6ba56ae457ae741a7cb340a2"
+    },
+    {
+      "site": "systems",
+      "url": "https://systems.verbaedge.com/portfolio/access-control.html",
+      "path": "portfolio/access-control.html",
+      "passed": true,
+      "status": 200,
+      "final_url": "https://systems.verbaedge.com/portfolio/access-control.html",
+      "sha256": "f5fc71c816d0a8359b0a5d1e70a2060f7927144949ca28d3481740da9475d9d1"
+    },
+    {
+      "site": "systems",
+      "url": "https://systems.verbaedge.com/portfolio/citation-context.html",
+      "path": "portfolio/citation-context.html",
+      "passed": true,
+      "status": 200,
+      "final_url": "https://systems.verbaedge.com/portfolio/citation-context.html",
+      "sha256": "13907088348f203feb19d2b726b080e692812f6925548175ab10c93a61cf89c2"
+    },
+    {
+      "site": "systems",
+      "url": "https://systems.verbaedge.com/portfolio/retrieval-metadata.html",
+      "path": "portfolio/retrieval-metadata.html",
+      "passed": true,
+      "status": 200,
+      "final_url": "https://systems.verbaedge.com/portfolio/retrieval-metadata.html",
+      "sha256": "820762e82657dd09e28c3dce63e13776962550dac5c87d9e26266f614590df66"
+    },
+    {
+      "site": "systems",
+      "url": "https://systems.verbaedge.com/robots.txt",
+      "path": "robots.txt",
+      "passed": true,
+      "status": 200,
+      "final_url": "https://systems.verbaedge.com/robots.txt",
+      "sha256": "8b980e9f848ba736873708f2d44318e03ebb8fa6a13b0fb000268dc1d471de2a"
+    },
+    {
+      "site": "systems",
+      "url": "https://systems.verbaedge.com/sitemap.xml",
+      "path": "sitemap.xml",
+      "passed": true,
+      "status": 200,
+      "final_url": "https://systems.verbaedge.com/sitemap.xml",
+      "sha256": "0b6be2fc6ffbd29f3f37d6b92ef8eed57e2781f1f57a422a199b184a03dad2a8"
+    },
+    {
+      "site": "systems",
+      "url": "https://systems.verbaedge.com/styles.css",
+      "path": "styles.css",
+      "passed": true,
+      "status": 200,
+      "final_url": "https://systems.verbaedge.com/styles.css",
+      "sha256": "455733f042c8cefa2a4e3689449158840e7b9e5888f60109f25a2d5e6acadc99"
+    },
+    {
+      "site": "logistics",
+      "url": "https://logistics.verbaedge.com/assets/brand/verbaedge-logo-180.png",
+      "path": "assets/brand/verbaedge-logo-180.png",
+      "passed": true,
+      "status": 200,
+      "final_url": "https://logistics.verbaedge.com/assets/brand/verbaedge-logo-180.png",
+      "sha256": "75aaf014d2d1273312c1d12e49982008ded27ec310ae498bac3981fc70c57675"
+    },
+    {
+      "site": "logistics",
+      "url": "https://logistics.verbaedge.com/assets/brand/verbaedge-logo.svg",
+      "path": "assets/brand/verbaedge-logo.svg",
+      "passed": true,
+      "status": 200,
+      "final_url": "https://logistics.verbaedge.com/assets/brand/verbaedge-logo.svg",
+      "sha256": "1a5faa859b7a308f52c1e7c55684e1fa9beebed77f2ad10a8e4258f6b804af33"
+    },
+    {
+      "site": "logistics",
+      "url": "https://logistics.verbaedge.com/billing/demo/check.js",
+      "path": "billing/demo/check.js",
+      "passed": true,
+      "status": 200,
+      "final_url": "https://logistics.verbaedge.com/billing/demo/check.js",
+      "sha256": "aac0fc27d7d8d548eb66914f5380413410517c0b574cea42d3e0d46c47219687"
+    },
+    {
+      "site": "logistics",
+      "url": "https://logistics.verbaedge.com/billing/demo/index.html",
+      "path": "billing/demo/index.html",
+      "passed": true,
+      "status": 200,
+      "final_url": "https://logistics.verbaedge.com/billing/demo/index.html",
+      "sha256": "a4e80834278d8e20029bb11a296112820255013f8092bd689b3f955d47e0cf0f"
+    },
+    {
+      "site": "logistics",
+      "url": "https://logistics.verbaedge.com/billing/index.html",
+      "path": "billing/index.html",
+      "passed": true,
+      "status": 200,
+      "final_url": "https://logistics.verbaedge.com/billing/index.html",
+      "sha256": "3059268fde9d9e3a254e66da02e2db9b4955c278fe207e2413ed310b5fc951c3"
+    },
+    {
+      "site": "logistics",
+      "url": "https://logistics.verbaedge.com/demo/demo.js",
+      "path": "demo/demo.js",
+      "passed": true,
+      "status": 200,
+      "final_url": "https://logistics.verbaedge.com/demo/demo.js",
+      "sha256": "4d30c5c2923b45f7edebfdc3cbee375ef0a54e5f92807f8be27f6adb63c11c2b"
+    },
+    {
+      "site": "logistics",
+      "url": "https://logistics.verbaedge.com/demo/index.html",
+      "path": "demo/index.html",
+      "passed": true,
+      "status": 200,
+      "final_url": "https://logistics.verbaedge.com/demo/index.html",
+      "sha256": "330894e1ec89263bc2a2e826cf0e18fe36bdcfc16744b1d43c0713c4c64999ef"
+    },
+    {
+      "site": "logistics",
+      "url": "https://logistics.verbaedge.com/favicon-32.png",
+      "path": "favicon-32.png",
+      "passed": true,
+      "status": 200,
+      "final_url": "https://logistics.verbaedge.com/favicon-32.png",
+      "sha256": "e5f690592f29deeec6dc2e6b110a1c7990470716f1aa0a9e06265f549412b151"
+    },
+    {
+      "site": "logistics",
+      "url": "https://logistics.verbaedge.com/favicon.svg",
+      "path": "favicon.svg",
+      "passed": true,
+      "status": 200,
+      "final_url": "https://logistics.verbaedge.com/favicon.svg",
+      "sha256": "1a5faa859b7a308f52c1e7c55684e1fa9beebed77f2ad10a8e4258f6b804af33"
+    },
+    {
+      "site": "logistics",
+      "url": "https://logistics.verbaedge.com/fr/facturation/index.html",
+      "path": "fr/facturation/index.html",
+      "passed": true,
+      "status": 200,
+      "final_url": "https://logistics.verbaedge.com/fr/facturation/index.html",
+      "sha256": "081cd0058e1ed02e98494f49ed3bf4b10cd4c7a94dac1518441b7ab5dff26160"
+    },
+    {
+      "site": "logistics",
+      "url": "https://logistics.verbaedge.com/fr/index.html",
+      "path": "fr/index.html",
+      "passed": true,
+      "status": 200,
+      "final_url": "https://logistics.verbaedge.com/fr/index.html",
+      "sha256": "7748cbae64dfd2e1388445c6ba0efe22011ff7789d160fc7665900907ac5ecaa"
+    },
+    {
+      "site": "logistics",
+      "url": "https://logistics.verbaedge.com/index.html",
+      "path": "index.html",
+      "passed": true,
+      "status": 200,
+      "final_url": "https://logistics.verbaedge.com/index.html",
+      "sha256": "f5515e5f3c4a7f32c3e546160108bb7b8e6fb9f0239fb7464bc34af2397cd318"
+    },
+    {
+      "site": "logistics",
+      "url": "https://logistics.verbaedge.com/robots.txt",
+      "path": "robots.txt",
+      "passed": true,
+      "status": 200,
+      "final_url": "https://logistics.verbaedge.com/robots.txt",
+      "sha256": "37bfbc0e796fc66fd2079ecc4b74cde0624dcb974cc0d9e9fdb26435bb18a1f9"
+    },
+    {
+      "site": "logistics",
+      "url": "https://logistics.verbaedge.com/site.css",
+      "path": "site.css",
+      "passed": true,
+      "status": 200,
+      "final_url": "https://logistics.verbaedge.com/site.css",
+      "sha256": "9ccbec0b81e287de5997177ab4964643f9c82c26796d40334f4941612fbacaed"
+    },
+    {
+      "site": "logistics",
+      "url": "https://logistics.verbaedge.com/sitemap.xml",
+      "path": "sitemap.xml",
+      "passed": true,
+      "status": 200,
+      "final_url": "https://logistics.verbaedge.com/sitemap.xml",
+      "sha256": "f279307ed03095987578911c74cb02da28dd5a73c4a9658194b07a4f856ae0d2"
+    }
+  ],
+  "scope": "HTTP status, redirect destinations, and exact deployed source bytes over trusted proxied HTTPS. Browser behavior and independent origin-certificate inspection are separate checks."
+}
