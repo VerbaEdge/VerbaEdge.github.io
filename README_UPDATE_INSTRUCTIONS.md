@@ -1,22 +1,26 @@
-# VerbaEdge Systems LLC — Dark Theme Website
+# VerbaEdge website update instructions
 
-This is the dark-theme version of the VerbaEdge website. It preserves the supplied site content, section order, project links, company contact details, logo, browser-tab icons, domain configuration, and portfolio images. The visual update is implemented in `styles.css`; the browser theme color in `index.html` is also updated for a consistent dark browser interface.
+The repository root currently publishes `verbaedge.com` from `main` through
+GitHub Pages. Preserve the homepage, stylesheet, branding, portfolio, and root
+`CNAME` during preparation. The three-site candidate is staged separately in
+`website-package/sites/`.
 
-## Files
+These directions supersede the older instructions to upload a ZIP directly over
+the publishing root:
 
-- `index.html` — website content and metadata
-- `styles.css` — dark navy/charcoal theme, blue and teal accents, responsive layout, and focus states
-- `CNAME` — custom domain configuration
-- `favicon.svg` and `favicon-32.png` — browser-tab icons
-- `assets/brand/` — VerbaEdge logo files
-- `assets/portfolio/` — existing portfolio images
+1. Back up and inspect the current repository and Pages settings before editing.
+2. Prepare changes on a new branch and pull request. Keep Systems and Trade &
+   Logistics Technology as independent sites in their own planned repositories.
+   Copy only the reviewed public site subset; the integrated source ZIP also
+   contains private material and must not be committed to this public repository.
+3. Run the checks in [website-package/VALIDATION.md](website-package/VALIDATION.md).
+   Review both candidates in real browsers and test their initial Pages URLs.
+4. Obtain approval before merging or changing Pages, domains, or DNS. Preserve
+   the existing root `CNAME` and unrelated website/email DNS records.
+5. Deploy and test **both** approved subdomains before preparing a separate main
+   homepage activation pull request. Obtain approval for that merge too.
 
-## Publish with GitHub Pages
-
-1. Extract this ZIP.
-2. Open the GitHub repository connected to `verbaedge.com`.
-3. Upload the **contents** of the extracted folder to the repository's publishing root, replacing the existing files when prompted. Keep the `assets/` folder structure intact.
-4. Commit the changes.
-5. After GitHub Pages deploys, visit `https://verbaedge.com/` and hard-refresh the page (`Ctrl + F5` on Windows or `Command + Shift + R` on macOS).
-
-The existing `CNAME` file should remain in the repository root so the custom domain configuration is preserved.
+See [website-package/DEPLOYMENT.md](website-package/DEPLOYMENT.md) for the exact
+site map, approval gates, acceptance checks, and rollback requirements. A merge
+of the preparation package does not authorize homepage activation or live
+configuration changes.

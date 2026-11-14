@@ -1,0 +1,72 @@
+{
+  "static_checks": [
+    {
+      "variant": "preview",
+      "protected_files": 12,
+      "sites": {
+        "main": {
+          "files": 12,
+          "html_pages": 4
+        },
+        "systems": {
+          "files": 15,
+          "html_pages": 4
+        },
+        "logistics": {
+          "files": 15,
+          "html_pages": 6
+        }
+      },
+      "errors": [],
+      "scope": "Static preservation, links, assets, metadata and public-tree checks; not browser or deployed subdomain acceptance."
+    },
+    {
+      "variant": "release",
+      "protected_files": 12,
+      "sites": {
+        "main": {
+          "files": 14,
+          "html_pages": 4
+        },
+        "systems": {
+          "files": 16,
+          "html_pages": 4
+        },
+        "logistics": {
+          "files": 16,
+          "html_pages": 6
+        }
+      },
+      "errors": [],
+      "scope": "Static preservation, links, assets, metadata and public-tree checks; not browser or deployed subdomain acceptance."
+    },
+    {
+      "variant": "source",
+      "protected_files": 12,
+      "sites": {
+        "main": {
+          "files": 14,
+          "html_pages": 4
+        },
+        "systems": {
+          "files": 16,
+          "html_pages": 4
+        },
+        "logistics": {
+          "files": 16,
+          "html_pages": 6
+        }
+      },
+      "errors": [],
+      "scope": "Static preservation, links, assets, metadata and public-tree checks; not browser or deployed subdomain acceptance."
+    }
+  ],
+  "demo_checks": "Passed Node VM user-flow checks for both demos; see VALIDATION.md",
+  "rag_checks": {
+    "supplied_test_count": 18,
+    "demonstrations": 3,
+    "result": "passed"
+  },
+  "browser_checks": "not performed; no callable browser tool",
+  "subdomain_checks": "not deployed or live-tested"
+}

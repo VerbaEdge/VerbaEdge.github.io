@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>RAG Security Hardening: Tenant &amp; Role Isolation | VerbaEdge Systems LLC</title>
+<meta content="Independent RAG debugging case study with synthetic fixtures, reproducible failures and targeted regression tests." name="description"/>
+<meta content="index, follow" name="robots"/><meta content="#091321" name="theme-color"/>
+<link href="../favicon.svg" rel="icon" type="image/svg+xml"/><link href="../styles.css" rel="stylesheet"/><link href="https://systems.verbaedge.com/portfolio/access-control.html" rel="canonical"/></head>
+<body><div aria-label="VerbaEdge divisions" class="network-bar" role="navigation"><div class="container network-inner"><a href="https://verbaedge.com/">VerbaEdge <span class="network-home">/ Overview</span></a><span aria-current="page" class="network-current">Systems</span><a href="https://logistics.verbaedge.com/">Trade &amp; Logistics Technology</a></div></div><header class="site-header"><div class="container header-inner">
+<a class="brand" href="../index.html#top"><img alt="" aria-hidden="true" class="brand-logo" src="../assets/brand/verbaedge-logo.svg"/><span>VerbaEdge Systems LLC</span></a>
+<nav aria-label="Case study navigation" class="nav-links"><a href="../index.html#portfolio">All portfolio work</a><a href="../index.html#offers">Fix sprint</a><a href="../index.html#contact">Contact</a></nav>
+</div></header>
+<main class="container case-study-main"><p class="case-meta">Independent technical demonstration · synthetic data</p>
+<h1>RAG Security Hardening: Tenant &amp; Role Isolation</h1><p class="case-intro">A multi-tenant document assistant sends unauthorized chunks into downstream retrieval context.</p>
+<div class="case-metrics"><div class="case-metric"><span>Before · Requests without unauthorized chunks</span><strong>0%</strong></div><div class="case-metric"><span>After · Requests without unauthorized chunks</span><strong>100%</strong></div></div>
+<p class="note">These results were measured only on 5 controlled authorization queries. They are not client results, live production improvements, or evidence of a formal security audit.</p>
+<h2>Reproduced root cause</h2><p>The baseline ranked across every tenant and role, including restricted and deleted documents, before enforcing any authorization.</p>
+<h2>Focused correction</h2><p>Use the trusted server-side principal to prefilter by tenant, role and active status; fail closed; ignore client-supplied tenant override; isolate cache keys.</p>
+<h2>Regression evidence</h2><p>8 tests: baseline leak; authorization; missing identity; override resistance; revoked roles; deleted chunks; cache separation; untrusted text role.</p><p>All listed tests executed and passed on November 12, 2026. Source fixtures, baseline code, corrected code, and test scripts are available in the downloadable project package.</p>
+<h2>Limits and responsible interpretation</h2><p>This is an in-memory access-control regression, not a real vector-store test or penetration test. Lower-trust message separation does not prove prompt-injection resistance.</p>
+<div class="button-row"><a class="button primary" href="../downloads/VerbaEdge_RAG_3_Portfolio_Projects.zip">Download runnable code and tests</a><a class="button" href="../index.html#portfolio">Back to portfolio</a></div>
+</main><footer class="site-footer"><div class="container">© 2026 VerbaEdge Systems LLC. All rights reserved.<p class="network-footer">Explore <a href="https://verbaedge.com/">VerbaEdge</a> or <a href="https://logistics.verbaedge.com/">Trade &amp; Logistics Technology</a>.</p></div></footer></body></html>
