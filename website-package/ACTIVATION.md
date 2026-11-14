@@ -1,17 +1,19 @@
-# Main homepage activation candidate
+# Main homepage activation record
 
-The owner approved merging and deployment; that approval persists. Both
-separate sites are built at their domain merge SHAs, DNS resolves both CNAMEs
-to verbaedge.github.io through Google and Cloudflare, and all 32 custom-domain
-HTTPS status/destination/hash checks passed. Main activation PR #2 is now
-authorized to proceed after final static checks and a fresh backup. This is a
-preactivation record, not a claim that main has already merged. Subsite Pages
-certificate fields remain null and HTTPS enforcement is off; enabling the
-owner's Enforce HTTPS checkboxes remains a follow-up when available. Trusted
-proxied HTTPS checks passed, but direct origin TLS inspection and browser QA
-were unavailable. Existing main HTTPS enforcement remains enabled.
+Main activation [PR #2](https://github.com/VerbaEdge/VerbaEdge.github.io/pull/2)
+merged as `46d624503c86ec27ec3dcddee0bea8e1a2150076` after owner authorization
+and successful checks of both custom subdomains. GitHub Pages built that exact
+commit at `2026-11-14T06:57:20Z`. The final regression passed all 20 main
+content/alias checks, three portfolio destinations, original anchors and
+metadata, and apex/www HTTPS redirects.
 
-## Candidate changes
+The complete original engineering website is preserved at `/engineering/`.
+All eleven original protected files other than the homepage remain unchanged,
+including the main CNAME.
+See [DEPLOYMENT_STATUS.md](DEPLOYMENT_STATUS.md) for the final rollout record,
+remaining subsite Enforce HTTPS settings, and verification limitations.
+
+## Published compatibility changes
 
 The supplied main public site is overlaid onto the publishing root. Existing
 assets, the original `styles.css`, and the root `CNAME` bytes are retained. No
@@ -54,15 +56,14 @@ homepage against the historical baseline.
 Static checks do not establish live deployment or browser behavior. Both
 subdomains have now passed all 32 HTTPS root/asset response and hash checks,
 including downloads, demos, and French routes. The result is recorded in
-`custom-subdomains-validation.json`. Existing approval remains applicable and
-the activation can proceed. Browser/keyboard review and independent origin
-certificate inspection remain unperformed; the deployed main page and archive
-must be checked after the merge.
+`custom-subdomains-validation.json`. Existing approval applied to the completed activation. Browser/keyboard review
+and independent origin certificate inspection remain unperformed. The deployed
+main page and archive passed the recorded post-merge checks.
 
 ## Rollback
 
-The current live homepage remains the original baseline while this draft is
-unmerged. After any later activation failure, revert the activation merge or
+The live homepage is the integrated overview; the original complete page is
+preserved under `/engineering/`. For an activation regression, revert the activation merge or
 restore the original root `index.html` from the pre-edit backup or baseline
 commit `b7ae70f7afcfd40ab120bf11b0c389dbab00dc06` through the authorized review
 workflow. Retain the original assets, stylesheet, and CNAME. Restoring website

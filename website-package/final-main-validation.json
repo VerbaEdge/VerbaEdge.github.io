@@ -1,0 +1,389 @@
+{
+  "checked_at_utc": "2026-11-14T06:57:55.178555+00:00",
+  "candidate_commit": "46d624503c86ec27ec3dcddee0bea8e1a2150076",
+  "origin": "https://verbaedge.com/",
+  "expected_repository_files": 20,
+  "repository_only_configuration": [
+    "CNAME",
+    ".nojekyll"
+  ],
+  "https_content_checks": [
+    {
+      "url": "https://verbaedge.com/assets/brand/verbaedge-logo-180.png",
+      "redirects": [],
+      "status": 200,
+      "final_url": "https://verbaedge.com/assets/brand/verbaedge-logo-180.png",
+      "content_type": "image/png",
+      "sha256": "75aaf014d2d1273312c1d12e49982008ded27ec310ae498bac3981fc70c57675",
+      "bytes": 8122,
+      "path": "assets/brand/verbaedge-logo-180.png",
+      "expected_sha256": "75aaf014d2d1273312c1d12e49982008ded27ec310ae498bac3981fc70c57675",
+      "passed": true
+    },
+    {
+      "url": "https://verbaedge.com/assets/brand/verbaedge-logo.svg",
+      "redirects": [],
+      "status": 200,
+      "final_url": "https://verbaedge.com/assets/brand/verbaedge-logo.svg",
+      "content_type": "image/svg+xml",
+      "sha256": "1a5faa859b7a308f52c1e7c55684e1fa9beebed77f2ad10a8e4258f6b804af33",
+      "bytes": 499,
+      "path": "assets/brand/verbaedge-logo.svg",
+      "expected_sha256": "1a5faa859b7a308f52c1e7c55684e1fa9beebed77f2ad10a8e4258f6b804af33",
+      "passed": true
+    },
+    {
+      "url": "https://verbaedge.com/assets/portfolio/upwork-portfolio-cpp-edge-ai-application.png",
+      "redirects": [],
+      "status": 200,
+      "final_url": "https://verbaedge.com/assets/portfolio/upwork-portfolio-cpp-edge-ai-application.png",
+      "content_type": "image/png",
+      "sha256": "6380683f1996c9f30b6091814ea921db2b6c37d3965f18c3691f8706546a7427",
+      "bytes": 1777122,
+      "path": "assets/portfolio/upwork-portfolio-cpp-edge-ai-application.png",
+      "expected_sha256": "6380683f1996c9f30b6091814ea921db2b6c37d3965f18c3691f8706546a7427",
+      "passed": true
+    },
+    {
+      "url": "https://verbaedge.com/assets/portfolio/upwork-portfolio-image-classifier-edge-hardware.png",
+      "redirects": [],
+      "status": 200,
+      "final_url": "https://verbaedge.com/assets/portfolio/upwork-portfolio-image-classifier-edge-hardware.png",
+      "content_type": "image/png",
+      "sha256": "e36adede4287909e0d0add3a7cf70dd340915caba7e1aa2b89c2b50abb2d07f5",
+      "bytes": 1777000,
+      "path": "assets/portfolio/upwork-portfolio-image-classifier-edge-hardware.png",
+      "expected_sha256": "e36adede4287909e0d0add3a7cf70dd340915caba7e1aa2b89c2b50abb2d07f5",
+      "passed": true
+    },
+    {
+      "url": "https://verbaedge.com/assets/portfolio/upwork-portfolio-yocto-network-boot.png",
+      "redirects": [],
+      "status": 200,
+      "final_url": "https://verbaedge.com/assets/portfolio/upwork-portfolio-yocto-network-boot.png",
+      "content_type": "image/png",
+      "sha256": "b33752f713b8871a771e824eaf07481e2b50eb47d6103a2108f844886ad8322e",
+      "bytes": 1585971,
+      "path": "assets/portfolio/upwork-portfolio-yocto-network-boot.png",
+      "expected_sha256": "b33752f713b8871a771e824eaf07481e2b50eb47d6103a2108f844886ad8322e",
+      "passed": true
+    },
+    {
+      "url": "https://verbaedge.com/assets/verbaedge-logo.svg",
+      "redirects": [],
+      "status": 200,
+      "final_url": "https://verbaedge.com/assets/verbaedge-logo.svg",
+      "content_type": "image/svg+xml",
+      "sha256": "1a5faa859b7a308f52c1e7c55684e1fa9beebed77f2ad10a8e4258f6b804af33",
+      "bytes": 499,
+      "path": "assets/verbaedge-logo.svg",
+      "expected_sha256": "1a5faa859b7a308f52c1e7c55684e1fa9beebed77f2ad10a8e4258f6b804af33",
+      "passed": true
+    },
+    {
+      "url": "https://verbaedge.com/downloads/VerbaEdge_RAG_3_Portfolio_Projects.zip",
+      "redirects": [],
+      "status": 200,
+      "final_url": "https://verbaedge.com/downloads/VerbaEdge_RAG_3_Portfolio_Projects.zip",
+      "content_type": "application/x-zip-compressed",
+      "sha256": "f45737baba872b599a2334e96328d0cac3767f0fd60afd9fa33b42280521d948",
+      "bytes": 23386,
+      "path": "downloads/VerbaEdge_RAG_3_Portfolio_Projects.zip",
+      "expected_sha256": "f45737baba872b599a2334e96328d0cac3767f0fd60afd9fa33b42280521d948",
+      "passed": true
+    },
+    {
+      "url": "https://verbaedge.com/engineering/index.html",
+      "redirects": [],
+      "status": 200,
+      "final_url": "https://verbaedge.com/engineering/index.html",
+      "content_type": "text/html; charset=utf-8",
+      "sha256": "d7cf02358d5de6338d635c41bb48cad67abdc90c6c66c3be7638e1bb2a40ec3a",
+      "bytes": 20578,
+      "path": "engineering/index.html",
+      "expected_sha256": "d7cf02358d5de6338d635c41bb48cad67abdc90c6c66c3be7638e1bb2a40ec3a",
+      "passed": true
+    },
+    {
+      "url": "https://verbaedge.com/favicon-32.png",
+      "redirects": [],
+      "status": 200,
+      "final_url": "https://verbaedge.com/favicon-32.png",
+      "content_type": "image/png",
+      "sha256": "e5f690592f29deeec6dc2e6b110a1c7990470716f1aa0a9e06265f549412b151",
+      "bytes": 1383,
+      "path": "favicon-32.png",
+      "expected_sha256": "e5f690592f29deeec6dc2e6b110a1c7990470716f1aa0a9e06265f549412b151",
+      "passed": true
+    },
+    {
+      "url": "https://verbaedge.com/favicon.svg",
+      "redirects": [],
+      "status": 200,
+      "final_url": "https://verbaedge.com/favicon.svg",
+      "content_type": "image/svg+xml",
+      "sha256": "1a5faa859b7a308f52c1e7c55684e1fa9beebed77f2ad10a8e4258f6b804af33",
+      "bytes": 499,
+      "path": "favicon.svg",
+      "expected_sha256": "1a5faa859b7a308f52c1e7c55684e1fa9beebed77f2ad10a8e4258f6b804af33",
+      "passed": true
+    },
+    {
+      "url": "https://verbaedge.com/index.html",
+      "redirects": [],
+      "status": 200,
+      "final_url": "https://verbaedge.com/index.html",
+      "content_type": "text/html; charset=utf-8",
+      "sha256": "272f930706633212097792aecd88335f8dd53765ba7cf4fecb5cf256c8655d0f",
+      "bytes": 11185,
+      "path": "index.html",
+      "expected_sha256": "272f930706633212097792aecd88335f8dd53765ba7cf4fecb5cf256c8655d0f",
+      "passed": true
+    },
+    {
+      "url": "https://verbaedge.com/portfolio/access-control.html",
+      "redirects": [],
+      "status": 200,
+      "final_url": "https://verbaedge.com/portfolio/access-control.html",
+      "content_type": "text/html; charset=utf-8",
+      "sha256": "374fcb0858b4636fcf14122023dad1f3f7cb8d1d44d65f2ee9e5520b4b1abf0e",
+      "bytes": 848,
+      "path": "portfolio/access-control.html",
+      "expected_sha256": "374fcb0858b4636fcf14122023dad1f3f7cb8d1d44d65f2ee9e5520b4b1abf0e",
+      "passed": true
+    },
+    {
+      "url": "https://verbaedge.com/portfolio/citation-context.html",
+      "redirects": [],
+      "status": 200,
+      "final_url": "https://verbaedge.com/portfolio/citation-context.html",
+      "content_type": "text/html; charset=utf-8",
+      "sha256": "ee24a95e4c952e0a27e25bafb30dbafda312cdf4660874984306cf7c714d3e19",
+      "bytes": 854,
+      "path": "portfolio/citation-context.html",
+      "expected_sha256": "ee24a95e4c952e0a27e25bafb30dbafda312cdf4660874984306cf7c714d3e19",
+      "passed": true
+    },
+    {
+      "url": "https://verbaedge.com/portfolio/retrieval-metadata.html",
+      "redirects": [],
+      "status": 200,
+      "final_url": "https://verbaedge.com/portfolio/retrieval-metadata.html",
+      "content_type": "text/html; charset=utf-8",
+      "sha256": "27c54b9338db54190aec81b89efa6c5da428f593f3e608bbfb4dfb4678b656ab",
+      "bytes": 860,
+      "path": "portfolio/retrieval-metadata.html",
+      "expected_sha256": "27c54b9338db54190aec81b89efa6c5da428f593f3e608bbfb4dfb4678b656ab",
+      "passed": true
+    },
+    {
+      "url": "https://verbaedge.com/robots.txt",
+      "redirects": [],
+      "status": 200,
+      "final_url": "https://verbaedge.com/robots.txt",
+      "content_type": "text/plain; charset=utf-8",
+      "sha256": "cc2e4edde1de59f0010d03a6cb11e9c1670f736590fc44a4f83548bf1c2ea374",
+      "bytes": 66,
+      "path": "robots.txt",
+      "expected_sha256": "cc2e4edde1de59f0010d03a6cb11e9c1670f736590fc44a4f83548bf1c2ea374",
+      "passed": true
+    },
+    {
+      "url": "https://verbaedge.com/site.css",
+      "redirects": [],
+      "status": 200,
+      "final_url": "https://verbaedge.com/site.css",
+      "content_type": "text/css; charset=utf-8",
+      "sha256": "9ccbec0b81e287de5997177ab4964643f9c82c26796d40334f4941612fbacaed",
+      "bytes": 8397,
+      "path": "site.css",
+      "expected_sha256": "9ccbec0b81e287de5997177ab4964643f9c82c26796d40334f4941612fbacaed",
+      "passed": true
+    },
+    {
+      "url": "https://verbaedge.com/sitemap.xml",
+      "redirects": [],
+      "status": 200,
+      "final_url": "https://verbaedge.com/sitemap.xml",
+      "content_type": "application/xml",
+      "sha256": "666e6b0b3e40f4b1c19e7ca05c234b90cc9ed922a43db79f940f7a4d1eb110cc",
+      "bytes": 157,
+      "path": "sitemap.xml",
+      "expected_sha256": "666e6b0b3e40f4b1c19e7ca05c234b90cc9ed922a43db79f940f7a4d1eb110cc",
+      "passed": true
+    },
+    {
+      "url": "https://verbaedge.com/styles.css",
+      "redirects": [],
+      "status": 200,
+      "final_url": "https://verbaedge.com/styles.css",
+      "content_type": "text/css; charset=utf-8",
+      "sha256": "5c00e63ab04f17658f14a74eab8f3fdee5c24a8cc92924424d9c98d651bbae12",
+      "bytes": 9797,
+      "path": "styles.css",
+      "expected_sha256": "5c00e63ab04f17658f14a74eab8f3fdee5c24a8cc92924424d9c98d651bbae12",
+      "passed": true
+    },
+    {
+      "url": "https://verbaedge.com/",
+      "redirects": [],
+      "status": 200,
+      "final_url": "https://verbaedge.com/",
+      "content_type": "text/html; charset=utf-8",
+      "sha256": "272f930706633212097792aecd88335f8dd53765ba7cf4fecb5cf256c8655d0f",
+      "bytes": 11185,
+      "path": "/",
+      "expected_sha256": "272f930706633212097792aecd88335f8dd53765ba7cf4fecb5cf256c8655d0f",
+      "passed": true
+    },
+    {
+      "url": "https://verbaedge.com/engineering/",
+      "redirects": [],
+      "status": 200,
+      "final_url": "https://verbaedge.com/engineering/",
+      "content_type": "text/html; charset=utf-8",
+      "sha256": "d7cf02358d5de6338d635c41bb48cad67abdc90c6c66c3be7638e1bb2a40ec3a",
+      "bytes": 20578,
+      "path": "/engineering/",
+      "expected_sha256": "d7cf02358d5de6338d635c41bb48cad67abdc90c6c66c3be7638e1bb2a40ec3a",
+      "passed": true
+    }
+  ],
+  "metadata_checks": [
+    {
+      "path": "/",
+      "passed": true,
+      "missing_legacy_ids": [],
+      "canonical": [
+        "https://verbaedge.com/"
+      ],
+      "noindex": false,
+      "h1": 1
+    },
+    {
+      "path": "/engineering/",
+      "passed": true,
+      "missing_legacy_ids": [],
+      "canonical": [
+        "https://verbaedge.com/engineering/"
+      ],
+      "noindex": true,
+      "h1": 1
+    }
+  ],
+  "portfolio_destination_checks": [
+    {
+      "path": "portfolio/access-control.html",
+      "meta_refresh": [
+        "https://systems.verbaedge.com/portfolio/access-control.html"
+      ],
+      "fallback_href_present": true,
+      "destination": {
+        "url": "https://systems.verbaedge.com/portfolio/access-control.html",
+        "redirects": [],
+        "status": 200,
+        "final_url": "https://systems.verbaedge.com/portfolio/access-control.html",
+        "content_type": "text/html; charset=utf-8",
+        "sha256": "f5fc71c816d0a8359b0a5d1e70a2060f7927144949ca28d3481740da9475d9d1",
+        "bytes": 3718
+      },
+      "expected_sha256": "f5fc71c816d0a8359b0a5d1e70a2060f7927144949ca28d3481740da9475d9d1",
+      "passed": true
+    },
+    {
+      "path": "portfolio/citation-context.html",
+      "meta_refresh": [
+        "https://systems.verbaedge.com/portfolio/citation-context.html"
+      ],
+      "fallback_href_present": true,
+      "destination": {
+        "url": "https://systems.verbaedge.com/portfolio/citation-context.html",
+        "redirects": [],
+        "status": 200,
+        "final_url": "https://systems.verbaedge.com/portfolio/citation-context.html",
+        "content_type": "text/html; charset=utf-8",
+        "sha256": "13907088348f203feb19d2b726b080e692812f6925548175ab10c93a61cf89c2",
+        "bytes": 3652
+      },
+      "expected_sha256": "13907088348f203feb19d2b726b080e692812f6925548175ab10c93a61cf89c2",
+      "passed": true
+    },
+    {
+      "path": "portfolio/retrieval-metadata.html",
+      "meta_refresh": [
+        "https://systems.verbaedge.com/portfolio/retrieval-metadata.html"
+      ],
+      "fallback_href_present": true,
+      "destination": {
+        "url": "https://systems.verbaedge.com/portfolio/retrieval-metadata.html",
+        "redirects": [],
+        "status": 200,
+        "final_url": "https://systems.verbaedge.com/portfolio/retrieval-metadata.html",
+        "content_type": "text/html; charset=utf-8",
+        "sha256": "820762e82657dd09e28c3dce63e13776962550dac5c87d9e26266f614590df66",
+        "bytes": 3622
+      },
+      "expected_sha256": "820762e82657dd09e28c3dce63e13776962550dac5c87d9e26266f614590df66",
+      "passed": true
+    }
+  ],
+  "redirect_policy_observations": [
+    {
+      "url": "http://verbaedge.com/",
+      "redirects": [
+        {
+          "status": 301,
+          "from": "http://verbaedge.com/",
+          "to": "https://verbaedge.com/"
+        }
+      ],
+      "status": 200,
+      "final_url": "https://verbaedge.com/",
+      "content_type": "text/html; charset=utf-8",
+      "sha256": "272f930706633212097792aecd88335f8dd53765ba7cf4fecb5cf256c8655d0f",
+      "bytes": 11185,
+      "final_scheme": "https",
+      "final_host": "verbaedge.com",
+      "activation_body_matches": true
+    },
+    {
+      "url": "https://www.verbaedge.com/",
+      "redirects": [
+        {
+          "status": 301,
+          "from": "https://www.verbaedge.com/",
+          "to": "https://verbaedge.com/"
+        }
+      ],
+      "status": 200,
+      "final_url": "https://verbaedge.com/",
+      "content_type": "text/html; charset=utf-8",
+      "sha256": "272f930706633212097792aecd88335f8dd53765ba7cf4fecb5cf256c8655d0f",
+      "bytes": 11185,
+      "final_scheme": "https",
+      "final_host": "verbaedge.com",
+      "activation_body_matches": true
+    },
+    {
+      "url": "http://www.verbaedge.com/",
+      "redirects": [
+        {
+          "status": 301,
+          "from": "http://www.verbaedge.com/",
+          "to": "https://verbaedge.com/"
+        }
+      ],
+      "status": 200,
+      "final_url": "https://verbaedge.com/",
+      "content_type": "text/html; charset=utf-8",
+      "sha256": "272f930706633212097792aecd88335f8dd53765ba7cf4fecb5cf256c8655d0f",
+      "bytes": 11185,
+      "final_scheme": "https",
+      "final_host": "verbaedge.com",
+      "activation_body_matches": true
+    }
+  ],
+  "errors": [],
+  "passed": true,
+  "scope": "HTTP content, hashes, metadata and redirect observations through the inherited network path with default TLS verification. No browser QA or direct-origin TLS verification; no configuration changes."
+}

@@ -1,39 +1,40 @@
-# VerbaEdge three-site review package
+# VerbaEdge integrated website source and records
 
-Prepared from the supplied integrated archive. The current root website remains
-unchanged. This directory contains public website candidates only; private
-strategy, finance, and execution planning attachments remain outside the public
-repository.
+The approved three-site rollout is published. The supplied public source
+subsets remain here for provenance. Private strategy, finance and mixed
+management attachments are excluded from the public repository and exports.
 
-| Candidate | Intended repository | Intended domain | Status |
+| Site | Supplied source | Repository | Published URL |
 | --- | --- | --- | --- |
-| `sites/main/` | `VerbaEdge/VerbaEdge.github.io` | `verbaedge.com` | Staged replacement; activate last after separate approval |
-| `sites/systems/` | `VerbaEdge/verbaedge-systems` | `systems.verbaedge.com` | Separate planned site; not deployed |
-| `sites/logistics/` | `VerbaEdge/verbaedge-logistics` | `logistics.verbaedge.com` | Separate planned site; not deployed |
+| Main overview | `sites/main/` | `VerbaEdge/VerbaEdge.github.io` | https://verbaedge.com/ |
+| Systems | `sites/systems/` | `VerbaEdge/verbaedge-systems` | https://systems.verbaedge.com/ |
+| Trade & Logistics Technology | `sites/logistics/` | `VerbaEdge/verbaedge-logistics` | https://logistics.verbaedge.com/ |
 
-All three are independent buildless static sites. The subsite candidates have no
-`CNAME`. The main candidate retains the existing `CNAME` bytes.
+The active main site adds compatibility sections and the complete original
+engineering page at `/engineering/`; those additions are pinned in
+`activation-provenance.json`. The original assets, stylesheet, CNAME and
+portfolio remain preserved. Each subsite has its own domain CNAME in its own
+repository. The original supplied subsite source subsets here remain unchanged
+from the reviewed content, without deployment CNAMEs.
 
-The [inspection record](INSPECTION.md) documents the backup and sources.
-[Validation](VALIDATION.md) records fresh checks and limitations.
-[Deployment](DEPLOYMENT.md) describes the staged rollout and approvals.
-`source-provenance.json` records original public source hashes, and
-`preserved-files.json` pins the original publishing files.
+[DEPLOYMENT_STATUS.md](DEPLOYMENT_STATUS.md) is the final rollout record and
+includes remaining HTTPS setting limitations. [ACTIVATION.md](ACTIVATION.md)
+records preservation and rollback. [INSPECTION.md](INSPECTION.md),
+[VALIDATION.md](VALIDATION.md) and [DEPLOYMENT.md](DEPLOYMENT.md) retain the
+historical audit, preparation checks and rollout plan. Their statements about
+unmerged drafts or unchanged homepage describe the preactivation checkpoint.
 
-The supplied public content is retained with four reviewed file changes:
+Fresh live evidence is in `initial-pages-validation.json`,
+`custom-subdomains-validation.json` and `final-main-validation.json`.
+The public source provenance and original SHA-256 baseline are retained in
+`source-provenance.json` and `preserved-files.json`.
 
-- `main/site.css` and `logistics/site.css`: allow long division labels to wrap on
-  narrow screens while keeping the logo size.
-- `logistics/sitemap.xml`: remove the shipment demo because its page is `noindex`.
-- `logistics/fr/facturation/index.html`: return French readers to the French
-  Logistics page; retain the explicit English billing link.
+Four source fixes were reviewed before deployment: narrow-screen brand wrapping
+in two stylesheets, the noindex demo sitemap entry, and French billing return
+links. The full original engineering portfolio and supplied synthetic RAG
+demonstrations were retained.
 
-Run `python3 scripts/export_website_package.py --output /tmp/verbaedge-review`
-from the repository root with a new, empty destination. `preview/` provides local
-cross-site navigation and disables indexing; `release/` retains intended live
-origins. Neither is published by this command. Browser QA and both deployed
-subdomain tests are still required before main activation.
-
-Do not upload this package directory, the entire integrated ZIP, or all three
-sites into the production publishing root. Do not merge or change live
-configuration without approval.
+The offline exporter still exports the three supplied source candidates, with
+local preview links or intended release origins. It does not export the extended
+production main overlay; use the root publishing files and activation manifest
+for that site. Exporting never publishes or changes DNS.
