@@ -1,15 +1,15 @@
 # Main homepage activation candidate
 
-The owner approved merging and deployment in the current conversation; that
-approval persists. Both separate sites are enabled in Pages and passed all
-32 original root/asset HTTP and hash checks at their initial Pages URLs. Their
-custom-domain PR #2 changes are merged, both matching domain builds are
-confirmed built, and GitHub confirms the Systems and Logistics CNAME settings. Both domains still returned NXDOMAIN at
-2026-11-14T06:39:30Z; certificate fields are null and HTTPS enforcement is not
-yet enabled. The owner has been asked to add the two DNS CNAME records. No
-additional Pages or GitHub domain-setting action is needed. Main activation
-PR #2 remains a draft until DNS, certificates, and both custom-subdomain HTTPS
-tests pass; the original live main homepage remains unchanged.
+The owner approved merging and deployment; that approval persists. Both
+separate sites are built at their domain merge SHAs, DNS resolves both CNAMEs
+to verbaedge.github.io through Google and Cloudflare, and all 32 custom-domain
+HTTPS status/destination/hash checks passed. Main activation PR #2 is now
+authorized to proceed after final static checks and a fresh backup. This is a
+preactivation record, not a claim that main has already merged. Subsite Pages
+certificate fields remain null and HTTPS enforcement is off; enabling the
+owner's Enforce HTTPS checkboxes remains a follow-up when available. Trusted
+proxied HTTPS checks passed, but direct origin TLS inspection and browser QA
+were unavailable. Existing main HTTPS enforcement remains enabled.
 
 ## Candidate changes
 
@@ -51,13 +51,13 @@ path adjustments to verify the complete original page against its original
 hash. Running without `--activated-main` intentionally flags the changed root
 homepage against the historical baseline.
 
-Static checks do not establish live deployment, browser behavior, valid
-certificates, or working subdomains. Record successful HTTPS tests for
-`systems.verbaedge.com` and `logistics.verbaedge.com`, their pages/assets,
-downloads/demos, French routes, and inter-site navigation before merging. Review
-the main candidate and preserved engineering page on desktop/mobile and with
-keyboard navigation. Existing approval remains applicable; the unmet subdomain
-test requirement is the reason this branch stays a draft.
+Static checks do not establish live deployment or browser behavior. Both
+subdomains have now passed all 32 HTTPS root/asset response and hash checks,
+including downloads, demos, and French routes. The result is recorded in
+`custom-subdomains-validation.json`. Existing approval remains applicable and
+the activation can proceed. Browser/keyboard review and independent origin
+certificate inspection remain unperformed; the deployed main page and archive
+must be checked after the merge.
 
 ## Rollback
 

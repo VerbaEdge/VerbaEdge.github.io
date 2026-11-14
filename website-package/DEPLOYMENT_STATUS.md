@@ -2,9 +2,10 @@
 
 The owner approved merge and deployment in the working conversation. That
 approval persists. Repository creation, app access, Pages enablement, initial
-Pages tests, and GitHub custom-domain configuration are complete. DNS access
-is the remaining external blocker; certificates and custom-domain HTTPS tests
-must follow before main activation.
+Pages tests, GitHub custom-domain configuration, and DNS propagation are
+complete. Both subdomains passed all 32 live HTTPS status/destination/hash
+checks. The authorized main activation can now proceed after its final static
+checks and backup. This record does not claim that main activation has merged.
 
 ## Completed
 
@@ -45,58 +46,68 @@ must follow before main activation.
   custom-domain setting is needed. Both domain builds are confirmed built at
   their matching merge SHAs: Systems updated `2026-11-14T06:40:31Z`, Logistics
   updated `2026-11-14T06:40:43Z`.
+- The owner updated DNS. Google and Cloudflare now resolve both subdomain
+  CNAMEs to `verbaedge.github.io`; their A lookups resolve to the four GitHub
+  Pages addresses. Nameservers and the original main homepage are unchanged.
+- Both custom HTTPS sites passed **32/32** original root and asset checks at
+  `2026-11-14T06:53:18Z`, with HTTP 200, the intended final URL, and exact
+  reviewed content hashes. Evidence is retained locally in
+  `final-preactivation-subdomains.json`. This includes portfolio/download,
+  demo/billing, and French-page files; these are actual custom-domain checks.
 - Main activation [PR #2](https://github.com/VerbaEdge/VerbaEdge.github.io/pull/2)
-  remains a draft. Its static activation check passes; it retains original
-  section anchors, visible engineering portfolio, assets/CNAME, and a complete
-  preserved original page. See [ACTIVATION.md](ACTIVATION.md).
+  is authorized to proceed now that the subdomain test requirement is met.
+  Its static activation check passes; it retains original section anchors,
+  visible engineering portfolio, assets/CNAME, and the complete original
+  page. The merge and resulting build must be recorded after they occur.
+  See [ACTIVATION.md](ACTIVATION.md).
 
-## Current blocker: DNS
+## DNS and HTTPS state
 
-The latest recorded check at `2026-11-14T06:39:30Z` returned NXDOMAIN for both
-`systems.verbaedge.com` and `logistics.verbaedge.com` through Google and
-Cloudflare. Neither custom-domain HTTPS connection reached an origin. Apex A
-records and the original main homepage remained unchanged.
-
-GitHub's current certificate fields are null and `https_enforced` is false
-for both subsites while DNS is pending. No certificate approval or working
-custom-domain HTTPS is claimed. A successful source or CNAME merge does not
-establish DNS propagation or certificate readiness.
-
-## Required DNS action
-
-The owner has been asked to add the following records at the provider that
-controls `verbaedge.com`:
+Both public resolvers confirmed the completed records at
+`2026-11-14T06:53:28Z`:
 
 | DNS type | Host | Target |
 | --- | --- | --- |
-| CNAME | `systems` | `VerbaEdge.github.io` |
-| CNAME | `logistics` | `VerbaEdge.github.io` |
+| CNAME | `systems` | `verbaedge.github.io` |
+| CNAME | `logistics` | `verbaedge.github.io` |
 
-Use a hostname target without a scheme or repository path. Preserve all
-existing apex, `www`, email, verification, and unrelated records. Nameservers
-are `dns1.registrar-servers.com` and `dns2.registrar-servers.com`, consistent
-with Namecheap DNS hosting. Repository creation, app grants, Pages enablement,
-and GitHub custom-domain entry do not need repeating.
+No further DNS action is required for this activation. Existing apex, `www`,
+email, verification, and unrelated records remain outside this subsite change.
+The main site's HTTPS enforcement remains enabled.
 
-## Remaining verification and main activation gate
+The 32 custom-domain checks passed over the environment's trusted proxied
+HTTPS path. GitHub Pages still reports null certificate fields and
+`https_enforced: false` for both subsites. Attempts to enable enforcement with
+`PUT .../pages` and `https_enforced: true` returned HTTP 403. Direct origin TLS
+inspection could not connect in this environment, so an independent origin
+certificate inspection has not passed and certificate approval is not claimed.
 
-After DNS is applied, verify both CNAMEs, wait for certificate issuance, and
-enable/verify HTTPS when GitHub permits it.
-Run the live checker against both intended custom domains. It checks status,
-redirect destinations, trusted proxied HTTPS, and exact reviewed bytes for both
-roots and all supplied public files. It cannot independently inspect origin
-certificates through the managed proxy.
+Both HTTP subdomain roots currently serve 200 rather than redirecting to HTTPS.
+The remaining owner settings task is to enable **Enforce HTTPS** in each
+subsite's Pages settings when the checkbox is available. This redirect option
+does not block the requested main activation after the successful HTTPS
+content checks. Do not disable the main site's existing HTTPS enforcement.
+
+## Main activation and verification limits
+
+Proceed with the already authorized main activation after final static checks
+and a fresh full-history backup, then verify its exact deployed source and
+Pages build. Record the actual merge SHA and deployment results afterward;
+this preactivation record does not state that the merge has already occurred.
 
 ```sh
 python3 -B scripts/verify_website_package.py --activated-main
 python3 -B scripts/verify_live_subsites.py
 ```
 
-No browser tool is callable in this managed environment; rendered responsive,
-keyboard, and accessibility QA remain unperformed. Initial Pages HTTP/hash
-checks do not replace browser QA or the pending custom-subdomain tests.
+The trusted proxied HTTPS checks establish response status, redirect
+destinations, and exact reviewed bytes. They do not independently establish
+origin certificate issuance. No browser tool is callable in this managed
+environment, so rendered responsive, keyboard, and accessibility QA remain
+unperformed. These limitations are reported separately from the successful
+32/32 live subdomain checks.
 
-Keep main activation PR #2 in draft and unmerged until **both** custom-domain
-HTTPS tests pass. The owner approval persists; no repeat approval is needed
-for the authorized deployment. The original main homepage stays preserved
-while DNS, certificates, and the live acceptance tests remain unresolved.
+The owner approval persists. Repository creation, app access, Pages setup,
+GitHub custom-domain entry, and DNS changes do not need repeating. The original
+main homepage is preserved at this preactivation checkpoint; the activation
+merge and resulting production behavior will be recorded after deployment.
