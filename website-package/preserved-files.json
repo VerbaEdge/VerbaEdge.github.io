@@ -1,0 +1,18 @@
+{
+  "base_commit": "b7ae70f7afcfd40ab120bf11b0c389dbab00dc06",
+  "algorithm": "sha256",
+  "files": {
+    ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "CNAME": "ee3f26eefdb6dacd1d7f463fdbb41da0d8696e0ed8f526c61398e6009ef12620",
+    "assets/brand/verbaedge-logo-180.png": "75aaf014d2d1273312c1d12e49982008ded27ec310ae498bac3981fc70c57675",
+    "assets/brand/verbaedge-logo.svg": "1a5faa859b7a308f52c1e7c55684e1fa9beebed77f2ad10a8e4258f6b804af33",
+    "assets/portfolio/upwork-portfolio-cpp-edge-ai-application.png": "6380683f1996c9f30b6091814ea921db2b6c37d3965f18c3691f8706546a7427",
+    "assets/portfolio/upwork-portfolio-image-classifier-edge-hardware.png": "e36adede4287909e0d0add3a7cf70dd340915caba7e1aa2b89c2b50abb2d07f5",
+    "assets/portfolio/upwork-portfolio-yocto-network-boot.png": "b33752f713b8871a771e824eaf07481e2b50eb47d6103a2108f844886ad8322e",
+    "assets/verbaedge-logo.svg": "1a5faa859b7a308f52c1e7c55684e1fa9beebed77f2ad10a8e4258f6b804af33",
+    "favicon-32.png": "e5f690592f29deeec6dc2e6b110a1c7990470716f1aa0a9e06265f549412b151",
+    "favicon.svg": "1a5faa859b7a308f52c1e7c55684e1fa9beebed77f2ad10a8e4258f6b804af33",
+    "index.html": "675e094c5a0c8a45920d82c3292b0eda28c163e988aba1b0509b7fc6f945400d",
+    "styles.css": "5c00e63ab04f17658f14a74eab8f3fdee5c24a8cc92924424d9c98d651bbae12"
+  }
+}

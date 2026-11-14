@@ -1,0 +1,91 @@
+{
+  "source_of_truth": "VerbaEdge_Integrated_Africa_Europe_Business_Websites.zip",
+  "public_subtrees": {
+    "main": "01_MAIN_UPLOAD_LAST__VerbaEdge.github.io",
+    "systems": "02_SYSTEMS_UPLOAD_FIRST__verbaedge-systems",
+    "logistics": "03_LOGISTICS_UPLOAD_SECOND__verbaedge-logistics"
+  },
+  "archives": [
+    {
+      "filename": "VerbaEdge_Main_Site_Original_Account_2026.zip",
+      "bytes": 39368,
+      "sha256": "288df2661c3e08facb6a0c87532313ceb68bbf7d90ad98c011eb83f8f6f28e30"
+    },
+    {
+      "filename": "VerbaEdge_TradeOps_Billing_Africa_Europe_2026.zip",
+      "bytes": 29064,
+      "sha256": "3ab8a81723f3ed9441db35a862219bf0b1fedb3ef29b1a78ae7e8478fad29bc4"
+    },
+    {
+      "filename": "VerbaEdge_Systems_2026.zip",
+      "bytes": 5147516,
+      "sha256": "ad3723d29ac819d70ead44b3bd516973152d500cc51caaac9603fc42b5107f0e"
+    },
+    {
+      "filename": "VerbaEdge_Main_Site_Original_Account_2026 (1).zip",
+      "bytes": 39368,
+      "sha256": "288df2661c3e08facb6a0c87532313ceb68bbf7d90ad98c011eb83f8f6f28e30"
+    },
+    {
+      "filename": "VerbaEdge_Integrated_Africa_Europe_Business_Websites.zip",
+      "bytes": 5248814,
+      "sha256": "2183569d7ae5cfe47654432630b5c446a8978f44633434651857e26ac8014d15"
+    }
+  ],
+  "comparison": "All supplied standalone public site files match the corresponding integrated public subtree byte-for-byte; main ZIP copies are identical.",
+  "excluded": "Private finance template and private/mixed management documents are not included in this public repository.",
+  "original_public_files": {
+    "main": {
+      ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "CNAME": "ee3f26eefdb6dacd1d7f463fdbb41da0d8696e0ed8f526c61398e6009ef12620",
+      "assets/brand/verbaedge-logo-180.png": "75aaf014d2d1273312c1d12e49982008ded27ec310ae498bac3981fc70c57675",
+      "assets/brand/verbaedge-logo.svg": "1a5faa859b7a308f52c1e7c55684e1fa9beebed77f2ad10a8e4258f6b804af33",
+      "downloads/VerbaEdge_RAG_3_Portfolio_Projects.zip": "f45737baba872b599a2334e96328d0cac3767f0fd60afd9fa33b42280521d948",
+      "favicon-32.png": "e5f690592f29deeec6dc2e6b110a1c7990470716f1aa0a9e06265f549412b151",
+      "favicon.svg": "1a5faa859b7a308f52c1e7c55684e1fa9beebed77f2ad10a8e4258f6b804af33",
+      "index.html": "bd11b63fb304eb6a544cc1ba86ef4f817933e194ee4d95861f537c1d12d740bf",
+      "portfolio/access-control.html": "374fcb0858b4636fcf14122023dad1f3f7cb8d1d44d65f2ee9e5520b4b1abf0e",
+      "portfolio/citation-context.html": "ee24a95e4c952e0a27e25bafb30dbafda312cdf4660874984306cf7c714d3e19",
+      "portfolio/retrieval-metadata.html": "27c54b9338db54190aec81b89efa6c5da428f593f3e608bbfb4dfb4678b656ab",
+      "robots.txt": "cc2e4edde1de59f0010d03a6cb11e9c1670f736590fc44a4f83548bf1c2ea374",
+      "site.css": "cf2eed9d93fd418a86d54c37b2a9f8bc21b0ec28c4c87a42775f50190250ef4c",
+      "sitemap.xml": "666e6b0b3e40f4b1c19e7ca05c234b90cc9ed922a43db79f940f7a4d1eb110cc"
+    },
+    "systems": {
+      ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "assets/brand/verbaedge-logo-180.png": "75aaf014d2d1273312c1d12e49982008ded27ec310ae498bac3981fc70c57675",
+      "assets/brand/verbaedge-logo.svg": "1a5faa859b7a308f52c1e7c55684e1fa9beebed77f2ad10a8e4258f6b804af33",
+      "assets/portfolio/upwork-portfolio-cpp-edge-ai-application.png": "6380683f1996c9f30b6091814ea921db2b6c37d3965f18c3691f8706546a7427",
+      "assets/portfolio/upwork-portfolio-image-classifier-edge-hardware.png": "e36adede4287909e0d0add3a7cf70dd340915caba7e1aa2b89c2b50abb2d07f5",
+      "assets/portfolio/upwork-portfolio-yocto-network-boot.png": "b33752f713b8871a771e824eaf07481e2b50eb47d6103a2108f844886ad8322e",
+      "downloads/VerbaEdge_RAG_3_Portfolio_Projects.zip": "f45737baba872b599a2334e96328d0cac3767f0fd60afd9fa33b42280521d948",
+      "favicon-32.png": "e5f690592f29deeec6dc2e6b110a1c7990470716f1aa0a9e06265f549412b151",
+      "favicon.svg": "1a5faa859b7a308f52c1e7c55684e1fa9beebed77f2ad10a8e4258f6b804af33",
+      "index.html": "df0336f4ee72329119471a47d366db57fa7cc45b6ba56ae457ae741a7cb340a2",
+      "portfolio/access-control.html": "f5fc71c816d0a8359b0a5d1e70a2060f7927144949ca28d3481740da9475d9d1",
+      "portfolio/citation-context.html": "13907088348f203feb19d2b726b080e692812f6925548175ab10c93a61cf89c2",
+      "portfolio/retrieval-metadata.html": "820762e82657dd09e28c3dce63e13776962550dac5c87d9e26266f614590df66",
+      "robots.txt": "8b980e9f848ba736873708f2d44318e03ebb8fa6a13b0fb000268dc1d471de2a",
+      "sitemap.xml": "0b6be2fc6ffbd29f3f37d6b92ef8eed57e2781f1f57a422a199b184a03dad2a8",
+      "styles.css": "455733f042c8cefa2a4e3689449158840e7b9e5888f60109f25a2d5e6acadc99"
+    },
+    "logistics": {
+      ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "assets/brand/verbaedge-logo-180.png": "75aaf014d2d1273312c1d12e49982008ded27ec310ae498bac3981fc70c57675",
+      "assets/brand/verbaedge-logo.svg": "1a5faa859b7a308f52c1e7c55684e1fa9beebed77f2ad10a8e4258f6b804af33",
+      "billing/demo/check.js": "aac0fc27d7d8d548eb66914f5380413410517c0b574cea42d3e0d46c47219687",
+      "billing/demo/index.html": "a4e80834278d8e20029bb11a296112820255013f8092bd689b3f955d47e0cf0f",
+      "billing/index.html": "3059268fde9d9e3a254e66da02e2db9b4955c278fe207e2413ed310b5fc951c3",
+      "demo/demo.js": "4d30c5c2923b45f7edebfdc3cbee375ef0a54e5f92807f8be27f6adb63c11c2b",
+      "demo/index.html": "330894e1ec89263bc2a2e826cf0e18fe36bdcfc16744b1d43c0713c4c64999ef",
+      "favicon-32.png": "e5f690592f29deeec6dc2e6b110a1c7990470716f1aa0a9e06265f549412b151",
+      "favicon.svg": "1a5faa859b7a308f52c1e7c55684e1fa9beebed77f2ad10a8e4258f6b804af33",
+      "fr/facturation/index.html": "82fcfb8e85d4cdaec30ac588c77c81d13a9624856e5430e319afa7367cb5a89f",
+      "fr/index.html": "7748cbae64dfd2e1388445c6ba0efe22011ff7789d160fc7665900907ac5ecaa",
+      "index.html": "f5515e5f3c4a7f32c3e546160108bb7b8e6fb9f0239fb7464bc34af2397cd318",
+      "robots.txt": "37bfbc0e796fc66fd2079ecc4b74cde0624dcb974cc0d9e9fdb26435bb18a1f9",
+      "site.css": "cf2eed9d93fd418a86d54c37b2a9f8bc21b0ec28c4c87a42775f50190250ef4c",
+      "sitemap.xml": "80297f09df9a64ebb00506c9a2ad3fe18fdeb2a5aa77e6b23ec0b8af07fc2eaf"
+    }
+  }
+}
